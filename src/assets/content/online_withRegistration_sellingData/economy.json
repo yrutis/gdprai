@@ -1,5 +1,5 @@
 {
-  "type": "IT",
+  "type": "economy",
   "paragraphs": [
     {
       "id": 1,
@@ -10,10 +10,10 @@
         "http://google.ch",
         "http://google.ch"
       ],
-      "highlightLaw": [1],
-      "highlightIT": [],
+      "highlightLaw": [2],
+      "highlightIT": [1,2],
       "highlightEconomy": [1],
-      "highlightApp": [1]
+      "highlightApp": []
    },
     {
       "id": 2,

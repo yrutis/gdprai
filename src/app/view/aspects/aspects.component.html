@@ -1,12 +1,12 @@
-<div class="p-4 content-box mt-4 mb-2">
-  <div class="row" *ngIf="page">
-  <div class="col-12">
-    <h3>{{title}}</h3>
+<div class="py-4 content-box mt-4 mb-2">
+  <div class="row m-0" *ngIf="page">
+  <div class="col-12 px-4">
+    <h4>{{title}}</h4>
     <hr>
   </div>
-  <div class="col-12" *ngFor="let p of page.paragraphs">
-    <h5>{{p.title}}</h5>
-    <p>{{p.textCondensed}}</p>
+  <div class="col-12 px-4 pt-1" *ngFor="let p of page.paragraphs" (mouseenter)="highlight(p)" (mouseleave)="unhighlight()" [class.highlight]="highlightIds.includes(p.id)">
+    <h6>{{p.title}}</h6>
+    <p class="description-text">{{p.textCondensed}}</p>
   </div>
 </div>
 
