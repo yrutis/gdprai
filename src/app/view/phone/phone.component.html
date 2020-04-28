@@ -1,76 +1,84 @@
-<div class="container">
-<div class="phonewrapper mx-auto">
-  <div>
-     <h6><fa-icon [icon]="['fas', 'bars']"></fa-icon> Analysing Throat</h6>
-    <hr>
-  </div>
-  <div><h6>Result</h6></div>
-  <div class="row general-advise">
-    <div class="col-md-8">
-      <div><h5 class="disease-header-style">Tonsillitis</h5></div>
-      <div><p>Tonsillitis is inflammation of the tonsils, typically of rapid onset.
-        It is a type of pharyngitis.
-        Symptoms may include sore throat, fever, enlargement of the tonsils, trouble swallowing, and large lymph nodes
-        around the neck.
-        Complications include peritonsillar abscess.<a href='https://google.com'>Learn more</a></p></div>
-    </div>
-    <div class="col-md-4">
-      <ngx-charts-pie-grid
-        [scheme]="colorScheme"
-        [results]="single"
-        [designatedTotal]="total"
-        [tooltipDisabled]="true"
-        [animations]="false"
-        [label]="label">
-      </ngx-charts-pie-grid>
-    </div>
-  </div>
+<div *ngIf="screenId == 2">
+    <div class="phonewrapper mx-auto">
+      <div>
+        <h6>
+          <fa-icon [icon]="['fas', 'bars']"></fa-icon>
+          Analysing Throat
+        </h6>
+        <hr>
+      </div>
+      <div><h6>Result</h6></div>
+      <div class="row general-advise">
+        <div class="col-md-7">
+          <div><h5 class="disease-header-style">Tonsillitis</h5></div>
+          <div><p>Tonsillitis is inflammation of the tonsils, typically of rapid onset.
+            It is a type of pharyngitis.
+            Symptoms may include sore throat, fever, enlargement of the tonsils, trouble swallowing, and large lymph nodes
+            around the neck.
+            Complications include peritonsillar abscess.<a href='https://google.com'>Learn more</a></p></div>
+        </div>
+        <div class="col-md-5">
+          <circle-progress [percent]="85" [radius]="50"></circle-progress>
+        </div>
+      </div>
 
-  <div><h6>Recommended Plan of action</h6></div>
-  <ul class="general-advise">
-    <li>
-      <fa-icon [icon]="['fas', 'user-md']"></fa-icon>
-      Visit a general practitioner
-    </li>
-    <hr>
-    <li>
-      <fa-icon [icon]="['fas', 'running']"></fa-icon>
-      Don't do sports
-    </li>
-    <hr>
-    <li>
-      <fa-icon [icon]="['fas', 'glass-whiskey']"></fa-icon>
-      Drink cold water
-    </li>
-    <hr>
-    <li>
-      <fa-icon [icon]="['fas', 'coffee']"></fa-icon>
-      Drink cold tea
-    </li>
-    <hr>
-  </ul>
-  <div class="row">
-    <div class="col-md-6">
-      picture
-    </div>
-    <div class="col-md-6">
-      <ul>
+      <div><h6>Recommended Plan of action</h6></div>
+      <ul class="general-advise">
         <li>
-          <fa-icon [icon]="['fas', 'check']"></fa-icon>
-          Your image is valid
+          <fa-icon [icon]="['fas', 'user-md']"></fa-icon>
+          Visit a general practitioner
         </li>
         <hr>
         <li>
-          <fa-icon [icon]="['fas', 'check']"></fa-icon>
-          Your image has been analyzed successfully
+          <fa-icon [icon]="['fas', 'running']"></fa-icon>
+          Don't do sports
         </li>
+        <hr>
+        <li>
+          <fa-icon [icon]="['fas', 'glass-whiskey']"></fa-icon>
+          Drink cold water
+        </li>
+        <hr>
+        <li>
+          <fa-icon [icon]="['fas', 'coffee']"></fa-icon>
+          Drink cold tea
+        </li>
+        <hr>
       </ul>
+    </div>
+    <div class="phone-overlay"></div>
+</div>
 
+<div *ngIf="screenId == 1">
+  <div class="phonewrapper mx-auto">
+    <div>
+      <h6>
+        <fa-icon [icon]="['fas', 'bars']"></fa-icon>
+        Analysing Throat
+      </h6>
+      <hr>
+    </div>
+    <div><h6>UPLOAD IMAGE</h6></div>
+    <div class="row">
+      <button mat-flat-button color="primary" (click)="changeScreen(2)">Upload</button>
+      <div class="col-md-6">
+        picture
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li>
+            <fa-icon [icon]="['fas', 'check']"></fa-icon>
+            Your image is valid
+          </li>
+          <hr>
+          <li>
+            <fa-icon [icon]="['fas', 'check']"></fa-icon>
+            Your image has been analyzed successfully
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
+  <div class="phone-overlay"></div>
 
-</div>
-  <div class="phone-overlay">
-
-  </div>
 </div>

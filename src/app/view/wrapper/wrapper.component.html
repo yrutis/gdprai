@@ -1,7 +1,99 @@
-<div class="container-fluid">
+<div class="header p-3">
   <div class="row">
-    <div class="col-3"><app-phone></app-phone></div>
-    <div class="col-3">Law</div>
+    <div class="col-6">
+      <h3>
+        Practitioner App
+      </h3>
+    </div>
+    <div class="col-6">
+      <h3>
+        <fa-icon [icon]="['fas','cog']" class="float-right mr-4 pointer" (click)="showSettings()"></fa-icon>
+      </h3>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <ng-container *ngIf="settingsVisible">
+    <div class="p-4 settings-box my-2">
+    <div class="row">
+      <div class="col-12">
+        <h5>Settings</h5>
+        <hr>
+      </div>
+    </div>
+    <form [formGroup]="settingsGroup" (ngSubmit)="applySettings()">
+      <div class="row px-2">
+        <div class="col-3">
+          <h6>
+            <fa-icon [icon]="['fas','wifi']" class="mr-1"></fa-icon>
+            Type of application
+          </h6>
+          <mat-radio-group aria-label="Select an option" formControlName="type" class="app-radio-group">
+            <mat-radio-button value="online">
+              <p class="mb-0"><strong>Online</strong></p><p class="radio-desc mb-0">Online means this and that and blablablablab</p>
+            </mat-radio-button>
+            <mat-radio-button value="semiOnline">Semi-Online</mat-radio-button>
+            <mat-radio-button value="offline">Offline</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div class="col-3">
+          <h6>
+            <fa-icon [icon]="['fas','fingerprint']" class="mr-1"></fa-icon>
+            Registration
+          </h6>
+          <mat-radio-group aria-label="Select an option" formControlName="registration" class="app-radio-group">
+            <mat-radio-button value="withRegistration" [disabled]="settingsGroup.get('type').value === 'offline'">With Registration
+            </mat-radio-button>
+            <mat-radio-button value="anonymous">Anonymous</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div class="col-3">
+          <h6>
+            <fa-icon [icon]="['fas','money-bill-alt']" class="mr-1"></fa-icon>
+            Selling Data
+          </h6>
+          <mat-radio-group aria-label="Select an option" formControlName="sellData" class="app-radio-group">
+            <mat-radio-button value="sellingData" [disabled]="settingsGroup.get('type').value === 'offline'">Selling Data
+            </mat-radio-button>
+            <mat-radio-button value="notSellingData">Not Selling Data</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div class="col-3">
+          <h6>
+            <fa-icon [icon]="['fas','info-circle']" class="mr-1"></fa-icon>
+            Content Fidelity
+          </h6>
+          <mat-radio-group aria-label="Select an option" formControlName="contentFidelity" class="app-radio-group">
+            <mat-radio-button value="hifi">High Content Fidelity
+            </mat-radio-button>
+            <mat-radio-button value="lofi">Low Content Fidelity</mat-radio-button>
+          </mat-radio-group>
+        </div>
+      </div>
+
+      <div class="row px-2">
+        <div class="col-12">
+          <button mat-flat-button type="submit" color="primary" class="float-right rounded-0">Apply</button>
+        </div>
+      </div>
+    </form>
+    </div>
+  </ng-container>
+
+  <div class="row">
+    <div class="col-3">
+      <app-phone></app-phone>
+    </div>
+    <div class="col-3">
+      <app-aspects
+        title="Perspective of Law"
+        type="law"
+        [applicationType]="applicationType"
+        [registrationType]="registrationType"
+        [sellingDataType]="sellingDataType"
+        [contentFidelity]="contentFidelity"></app-aspects>
+    </div>
     <div class="col-3">IT</div>
     <div class="col-3">Economy</div>
   </div>
@@ -11,4 +103,5 @@
     <div class="col-3"></div>
     <div class="col-3"></div>
   </div>
+
 </div>

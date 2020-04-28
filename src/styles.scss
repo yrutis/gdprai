@@ -33,35 +33,35 @@ $md-compact-primary: (
 );
 
 $md-compact-accent: (
-  50 : #e8f4f0,
-  100 : #c5e5da,
-  200 : #9fd3c1,
-  300 : #79c1a8,
-  400 : #5cb495,
-  500 : #3fa782,
-  600 : #399f7a,
-  700 : #31966f,
-  800 : #298c65,
-  900 : #1b7c52,
-  A100 : #b6ffde,
-  A200 : #83ffc6,
-  A400 : #50ffaf,
-  A700 : #36ffa3,
+  50 : #e4ebf1,
+  100 : #bbcddb,
+  200 : #8dabc3,
+  300 : #5f89ab,
+  400 : #3d7099,
+  500 : #1b5787,
+  600 : #184f7f,
+  700 : #144674,
+  800 : #103c6a,
+  900 : #082c57,
+  A100 : #8bb8ff,
+  A200 : #5899ff,
+  A400 : #257aff,
+  A700 : #0b6aff,
   contrast: (
     50 : #000000,
     100 : #000000,
     200 : #000000,
     300 : #000000,
-    400 : #000000,
-    500 : #000000,
+    400 : #ffffff,
+    500 : #ffffff,
     600 : #ffffff,
     700 : #ffffff,
     800 : #ffffff,
     900 : #ffffff,
     A100 : #000000,
     A200 : #000000,
-    A400 : #000000,
-    A700 : #000000,
+    A400 : #ffffff,
+    A700 : #ffffff,
   )
 );
 
@@ -71,3 +71,20 @@ $compact-app-accent: mat-palette($md-compact-accent, A200, A100, A400);
 $compact-app-warn: mat-palette($mat-red);
 $compact-app-theme: mat-light-theme($compact-app-primary, $compact-app-accent, $compact-app-warn);
 @include angular-material-theme($compact-app-theme);
+
+.pointer {
+  cursor: pointer;
+}
+
+.mat-radio-button {
+  position: relative !important;
+}
+
+.mat-radio-container {
+  position: absolute !important;
+  top: 4px !important;
+}
+
+.mat-radio-label-content {
+  padding-left: 30px !important;
+}

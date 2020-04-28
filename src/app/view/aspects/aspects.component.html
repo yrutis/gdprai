@@ -1,0 +1,10 @@
+<div class="row" *ngIf="page">
+  <div class="col-12">
+    <h1>{{title}}</h1>
+  </div>
+  <div class="col-12" *ngFor="let p of page.paragraphs">
+    <h3>{{p.title}}</h3>
+    <p>{{p.textCondensed}}</p>
+  </div>
+</div>
+
