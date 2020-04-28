@@ -1,0 +1,48 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  color: #808080;
+}
+
+.general-advise{
+  padding-left: 10px;
+}
+
+.disease-header-style{
+  color: red;
+}
+
+p {
+   font-size: 11px;
+  color: #808080;
+}
+
+.phonewrapper {
+  width: 424px;
+  padding-left: 13%;
+  padding-right: 13%;
+  padding-top: 20%;
+
+}
+
+.phone-overlay {
+  background-image: url("../../../assets/images/wireframe.png");
+  width: 424px;
+  height: 855px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20px;
+  pointer-events: none;
+
+}
+
+::ng-deep .ngx-charts { .ng-star-inserted { fill: #fff !important; } }
+
+
+
+
+

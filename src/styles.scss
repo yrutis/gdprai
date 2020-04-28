@@ -1,1 +1,73 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+$md-compact-primary: (
+  50 : #e9eaec,
+  100 : #c7cace,
+  200 : #a2a6ae,
+  300 : #7c828e,
+  400 : #606875,
+  500 : #444d5d,
+  600 : #3e4655,
+  700 : #353d4b,
+  800 : #2d3441,
+  900 : #1f2530,
+  A100 : #a2a6ae,
+  A200 : #7e838e,
+  A400 : #62656b,
+  A700 : #51555b,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  )
+);
+
+$md-compact-accent: (
+  50 : #e8f4f0,
+  100 : #c5e5da,
+  200 : #9fd3c1,
+  300 : #79c1a8,
+  400 : #5cb495,
+  500 : #3fa782,
+  600 : #399f7a,
+  700 : #31966f,
+  800 : #298c65,
+  900 : #1b7c52,
+  A100 : #b6ffde,
+  A200 : #83ffc6,
+  A400 : #50ffaf,
+  A700 : #36ffa3,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+@include mat-core();
+$compact-app-primary: mat-palette($md-compact-primary);
+$compact-app-accent: mat-palette($md-compact-accent, A200, A100, A400);
+$compact-app-warn: mat-palette($mat-red);
+$compact-app-theme: mat-light-theme($compact-app-primary, $compact-app-accent, $compact-app-warn);
+@include angular-material-theme($compact-app-theme);
