@@ -1,0 +1,35 @@
+{
+  "type": "IT",
+  "paragraphs": [
+    {
+      "id": 1,
+      "title": "Test title",
+      "textCondensed": "text condensed",
+      "textFull": "text full",
+      "references": [
+        "http://google.ch",
+        "http://google.ch"
+      ],
+      "highlightLaw": [1],
+      "highlightIT": [],
+      "highlightEconomy": [1],
+      "highlightApp": [1]
+   },
+    {
+      "id": 2,
+      "title": "Test title2",
+      "textCondensed": "text condensed",
+      "textFull": "text full",
+      "references": [
+        "http://google.ch",
+        "http://google.ch"
+      ],
+      "highlightLaw": [1],
+      "highlightIT": [],
+      "highlightEconomy": [1],
+      "highlightApp": [1]
+    }
+  ]
+}
+
+

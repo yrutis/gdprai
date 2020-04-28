@@ -16,13 +16,15 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
+import { AnimationsComponent } from './view/animations/animations.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WrapperComponent,
     PhoneComponent,
-    AspectsComponent
+    AspectsComponent,
+    AnimationsComponent
   ],
   imports: [
     BrowserModule,
