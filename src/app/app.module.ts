@@ -17,6 +17,10 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import { AnimationsComponent } from './view/animations/animations.component';
+import {NgbTooltipModule} from '@ng-bootstrap/ng-bootstrap';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {ClickStopPropagationDirective} from './view/clickStopPropagation';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,8 @@ import { AnimationsComponent } from './view/animations/animations.component';
     WrapperComponent,
     PhoneComponent,
     AspectsComponent,
-    AnimationsComponent
+    AnimationsComponent,
+    ClickStopPropagationDirective
   ],
   imports: [
     BrowserModule,
@@ -33,6 +38,7 @@ import { AnimationsComponent } from './view/animations/animations.component';
     FontAwesomeModule,
     NgxChartsModule,
     HttpClientModule,
+    NgbTooltipModule,
     NgCircleProgressModule.forRoot({
       backgroundPadding: 4,
       toFixed: 0,
@@ -51,7 +57,9 @@ import { AnimationsComponent } from './view/animations/animations.component';
     MatFormFieldModule,
     ReactiveFormsModule,
     MatInputModule,
-    MatRadioModule
+    MatRadioModule,
+    MatProgressSpinnerModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

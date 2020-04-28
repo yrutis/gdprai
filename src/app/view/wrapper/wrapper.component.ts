@@ -11,7 +11,7 @@ import {FormBuilder, FormGroup} from '@angular/forms';
 })
 export class WrapperComponent implements OnInit, OnDestroy {
 
-  currentPhoneScreen = 1;
+  currentPhoneScreen = 'login';
   applicationType = 'online';
   registrationType = 'withRegistration';
   sellingDataType = 'sellingData';
@@ -43,6 +43,7 @@ export class WrapperComponent implements OnInit, OnDestroy {
     this.stateService.phoneScreen$.pipe(takeUntil(this.componentDestroyed$))
       .subscribe(value => {
         console.log(value);
+        this.currentPhoneScreen = value;
       });
   }
 

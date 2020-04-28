@@ -7,17 +7,17 @@ import {HttpClient} from '@angular/common/http';
 })
 export class StateService {
 
-  phoneScreenSubject = new BehaviorSubject<number>(0);
+  phoneScreenSubject = new BehaviorSubject<string>('login');
   phoneScreen$ = this.phoneScreenSubject.asObservable();
 
   constructor(private http: HttpClient) {
   }
 
-  get phoneScreen(): Observable<number> {
+  get phoneScreen(): Observable<string> {
     return this.phoneScreen$;
   }
 
-  setPhoneScreen(screenId: number) {
+  setPhoneScreen(screenId: string) {
     this.phoneScreenSubject.next(screenId);
   }
 

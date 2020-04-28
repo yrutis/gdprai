@@ -1,84 +1,142 @@
-<div *ngIf="screenId == 2">
-    <div class="phonewrapper mx-auto">
-      <div>
-        <h6>
-          <fa-icon [icon]="['fas', 'bars']"></fa-icon>
-          Analysing Throat
-        </h6>
-        <hr>
-      </div>
-      <div><h6>Result</h6></div>
-      <div class="row general-advise">
-        <div class="col-md-7">
-          <div><h5 class="disease-header-style">Tonsillitis</h5></div>
-          <div><p>Tonsillitis is inflammation of the tonsils, typically of rapid onset.
-            It is a type of pharyngitis.
-            Symptoms may include sore throat, fever, enlargement of the tonsils, trouble swallowing, and large lymph nodes
-            around the neck.
-            Complications include peritonsillar abscess.<a href='https://google.com'>Learn more</a></p></div>
+<div *ngIf="screenId === 'result'">
+    <div class="phonewrapper">
+      <div class="p-4 mt-4">
+        <div class="row">
+          <div class="col-12">
+              <h6>
+                <fa-icon [icon]="['fas', 'bars']" class="mr-2"></fa-icon>
+                Analysing Throat
+                <fa-icon [icon]="['fas', 'redo-alt']" class="float-right" ngbTooltip="Reset App" (click)="reset()"></fa-icon>
+              </h6>
+              <hr>
+          </div>
+          <div class="col-12">
+            <h6>Result</h6>
+          </div>
+          <div class="col-md-7">
+            <h5 class="disease-header-style ml-2">Tonsillitis</h5>
+            <p class="ml-2">Tonsillitis is inflammation of the tonsils, typically of rapid onset.
+              It is a type of pharyngitis.
+              Symptoms may include sore throat, fever, enlargement of the tonsils, trouble swallowing, and large lymph nodes
+              around the neck.
+              Complications include peritonsillar abscess.<a href='https://google.com'>Learn more</a></p>
+          </div>
+          <div class="col-md-5">
+            <circle-progress [percent]="85" [radius]="50"></circle-progress>
+          </div>
         </div>
-        <div class="col-md-5">
-          <circle-progress [percent]="85" [radius]="50"></circle-progress>
+        <div class="row">
+          <div class="col-12">
+            <h6>Recommended Plan of action</h6>
+          </div>
+          <div class="col-12">
+            <ul class="ml-2 mt-2">
+              <li>
+                <fa-icon [icon]="['fas', 'user-md']"></fa-icon>
+                Visit a general practitioner
+              </li>
+              <hr>
+              <li>
+                <fa-icon [icon]="['fas', 'running']"></fa-icon>
+                Don't do sports
+              </li>
+              <hr>
+              <li>
+                <fa-icon [icon]="['fas', 'glass-whiskey']"></fa-icon>
+                Drink cold water
+              </li>
+              <hr>
+              <li>
+                <fa-icon [icon]="['fas', 'coffee']"></fa-icon>
+                Drink cold tea
+              </li>
+              <hr>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div><h6>Recommended Plan of action</h6></div>
-      <ul class="general-advise">
-        <li>
-          <fa-icon [icon]="['fas', 'user-md']"></fa-icon>
-          Visit a general practitioner
-        </li>
-        <hr>
-        <li>
-          <fa-icon [icon]="['fas', 'running']"></fa-icon>
-          Don't do sports
-        </li>
-        <hr>
-        <li>
-          <fa-icon [icon]="['fas', 'glass-whiskey']"></fa-icon>
-          Drink cold water
-        </li>
-        <hr>
-        <li>
-          <fa-icon [icon]="['fas', 'coffee']"></fa-icon>
-          Drink cold tea
-        </li>
-        <hr>
-      </ul>
+      </div>
     </div>
     <div class="phone-overlay"></div>
 </div>
 
-<div *ngIf="screenId == 1">
-  <div class="phonewrapper mx-auto">
-    <div>
-      <h6>
-        <fa-icon [icon]="['fas', 'bars']"></fa-icon>
-        Analysing Throat
-      </h6>
-      <hr>
-    </div>
-    <div><h6>UPLOAD IMAGE</h6></div>
-    <div class="row">
-      <button mat-flat-button color="primary" (click)="changeScreen(2)">Upload</button>
-      <div class="col-md-6">
-        picture
-      </div>
-      <div class="col-md-6">
-        <ul>
-          <li>
-            <fa-icon [icon]="['fas', 'check']"></fa-icon>
-            Your image is valid
-          </li>
+<div *ngIf="screenId === 'upload'">
+  <div class="phonewrapper">
+    <div class="p-4 mt-4">
+      <div class="row">
+        <div class="col-12">
+          <h6>
+            <fa-icon [icon]="['fas', 'bars']" class="mr-2"></fa-icon>
+            Analysing Throat
+            <fa-icon [icon]="['fas', 'redo-alt']" class="float-right" ngbTooltip="Reset App" (click)="reset()"></fa-icon>
+          </h6>
           <hr>
-          <li>
-            <fa-icon [icon]="['fas', 'check']"></fa-icon>
-            Your image has been analyzed successfully
-          </li>
-        </ul>
+        </div>
+        <ng-container *ngIf="!isAnalyzing; else analyze">
+          <div class="col-12">
+            <h6>Take an Image of your throat</h6>
+          </div>
+          <div class="col-12">
+            <button mat-flat-button color="primary" class="rounded-0" (click)="imageUploaded = true"><fa-icon [icon]="['fas', 'image']"></fa-icon> Choose Image</button>
+          </div>
+          <div class="col-12 mt-3" *ngIf="imageUploaded">
+            <h6>Your Image</h6>
+          </div>
+          <div class="col-5" *ngIf="imageUploaded">
+            <img src="assets/images/disease.png" class="disease-img"/>
+          </div>
+          <div class="col-7" *ngIf="imageUploaded">
+            <p><fa-icon [icon]="['fas', 'check']"></fa-icon> The image you have chosen is valid. You can start analyzing for diseases.</p>
+            <button mat-flat-button color="primary" class="rounded-0 mt-2" (click)="startAnalyzing()"><fa-icon [icon]="['fas', 'user-md']"></fa-icon> Analyze Image</button>
+          </div>
+        </ng-container>
       </div>
     </div>
   </div>
   <div class="phone-overlay"></div>
+</div>
 
+<ng-template #analyze>
+  <mat-spinner class="mx-auto"></mat-spinner>
+</ng-template>
+
+<div *ngIf="screenId === 'login'">
+  <div class="phonewrapper">
+    <div class="login-wrapper p-4">
+      <h6 class="mt-4 text-center">Practitioner App Login</h6>
+      <div class="login-form mx-auto mt-4">
+        <div class="row">
+          <div class="col-12">
+            <mat-form-field class="w-100">
+              <input matInput placeholder="Username" autocomplete="new-password">
+            </mat-form-field>
+          </div>
+          <div class="col-12">
+            <mat-form-field class="w-100">
+              <input matInput placeholder="Password" type="password" autocomplete="new-password">
+            </mat-form-field>
+          </div>
+          <div class="col-12">
+            <mat-checkbox checked><span class="agb-checkbox">Accept <span appClickStopPropagation class="agb-link" (click)="displayAgb = true">AGB</span></span></mat-checkbox>
+          </div>
+          <div class="col-12" *ngIf="displayAgb">
+            <p>
+              In den allgemeinen Geschäftsbedingungen fasst der Online-Verkäufer alle rechtlichen Aspekte des Geschäfts zusammen. Sobald der Kunde diesem Dokument zugestimmt hat, ist es integraler Bestandteil des Kaufvertrags.
+
+              In der Schweiz können die gesetzlichen Grundlagen für den Verkauf von Gütern oder Dienstleistungen über den Vertrag und die Vertragsbedingungen verändert werden. In der Regel fasst ein Händler alle seine Verkaufsbedingungen in einem als "AGB" bezeichneten Dokument zusammen. Dabei handelt es sich um eine Form der rechtlichen Absicherung. Genauere Informationen zu den gesetzlichen Verpflichtungen des Betreibers finden sich in dem entsprechenden Kapitel:
+            </p>
+          </div>
+          <div class="col-12">
+            <button mat-flat-button color="primary" class="rounded-0 float-right" (click)="screenId = 'upload'">Login</button>
+            <button mat-flat-button color="accent" class="rounded-0 float-right mr-2" [disabled]="true">Signup</button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+  <div class="phone-overlay"></div>
 </div>

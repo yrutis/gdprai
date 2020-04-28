@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {StateService} from '../../service/state.service';
 
 @Component({
@@ -8,39 +8,49 @@ import {StateService} from '../../service/state.service';
 })
 export class PhoneComponent implements OnInit {
 
-  screenId = 1;
+  @Input()
+  applicationType: string;
 
-  single = [
-    {
-      name: '',
-      value: 95
-    },
-    {
-      name: '',
-      value: 5
-    }
-  ];
-  view: any[] = [500, 400];
-  total = 100;
-  label = 'Tonsillitis';
+  @Input()
+  registrationType: string;
 
-  colorScheme = {
-    domain: ['#ff0000']
-  };
+  @Input()
+  sellingDataType: string;
+
+  screenId = 'login';
+  resetPage = 'login';
+  imageUploaded = false;
+  isAnalyzing = false;
+  displayAgb =  false;
 
 
-  // @Output()
-  // screenChanges = new EventEmitter<number>();
-
-  constructor(private stateService: StateService) {}
-
-  ngOnInit(): void {
+  constructor(private stateService: StateService) {
   }
 
-  changeScreen(screenId: number){
+  ngOnInit(): void {
+    if (this.applicationType === 'offline') {
+      this.screenId = 'upload';
+      this.resetPage = 'upload';
+    }
+  }
+
+  changeScreen(screenId: string) {
     this.screenId = screenId;
     // this.screenChanges.emit(this.screenId);
     this.stateService.setPhoneScreen(screenId);
   }
 
+  reset() {
+    this.screenId = this.resetPage;
+    this.imageUploaded = false;
+  }
+
+  startAnalyzing() {
+    this.isAnalyzing = true;
+    const int  = setInterval(() => {
+      this.isAnalyzing = false;
+      this.screenId = 'result';
+      clearInterval(int);
+    }, 2000);
+  }
 }
