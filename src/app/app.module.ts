@@ -21,6 +21,7 @@ import {NgbTooltipModule} from '@ng-bootstrap/ng-bootstrap';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {ClickStopPropagationDirective} from './view/clickStopPropagation';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import {ClickStopPropagationDirective} from './view/clickStopPropagation';
     MatInputModule,
     MatRadioModule,
     MatProgressSpinnerModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -21,7 +21,9 @@ export class PhoneComponent implements OnInit {
   resetPage = 'login';
   imageUploaded = false;
   isAnalyzing = false;
-  displayAgb =  false;
+  displayAgb = false;
+  qrScanned = false;
+  qrScanning = false;
 
 
   constructor(private stateService: StateService) {
@@ -43,11 +45,22 @@ export class PhoneComponent implements OnInit {
   reset() {
     this.screenId = this.resetPage;
     this.imageUploaded = false;
+    this.qrScanned = false;
+  }
+
+  scanQr() {
+    this.qrScanning = true;
+    this.qrScanned = false;
+    const int = setInterval(() => {
+      this.qrScanning = false;
+      this.qrScanned = true;
+      clearInterval(int);
+    }, 1500);
   }
 
   startAnalyzing() {
     this.isAnalyzing = true;
-    const int  = setInterval(() => {
+    const int = setInterval(() => {
       this.isAnalyzing = false;
       this.screenId = 'result';
       clearInterval(int);

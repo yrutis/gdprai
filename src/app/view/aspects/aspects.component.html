@@ -4,10 +4,33 @@
     <h4>{{title}}</h4>
     <hr>
   </div>
-  <div class="col-12 px-4 pt-1" *ngFor="let p of page.paragraphs" (mouseenter)="highlight(p)" (mouseleave)="unhighlight()" [class.highlight]="highlightIds.includes(p.id)">
-    <h6>{{p.title}}</h6>
-    <p class="description-text">{{p.textCondensed}}</p>
-  </div>
+    <div class="col-12 m-0 p-0">
+      <mat-accordion displayMode="flat">
+        <mat-expansion-panel
+          *ngFor="let p of page.paragraphs; let i = index"
+          [expanded]="i == 0"
+          (mouseenter)="highlight(p)"
+          (mouseleave)="unhighlight()"
+          [class.highlight]="highlightIds.includes(p.id)"
+          class="no-padding-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <strong>{{p.title}}</strong>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p class="description-text">{{p.textCondensed}}</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+
+    </div>
+<!--  <div class="col-12 px-4 pt-1" *ngFor="let p of page.paragraphs" (mouseenter)="highlight(p)" (mouseleave)="unhighlight()" [class.highlight]="highlightIds.includes(p.id)">-->
+<!--    <h6>{{p.title}}</h6>-->
+<!--    <p class="description-text">{{p.textCondensed}}</p>-->
+<!--  </div>-->
 </div>
 
 </div>
+
+
+

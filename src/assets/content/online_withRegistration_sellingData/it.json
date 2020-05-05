@@ -3,33 +3,59 @@
   "paragraphs": [
     {
       "id": 1,
-      "title": "Test title",
-      "textCondensed": "text condensed",
+      "title": "What is the user’s data?",
+      "textCondensed": "In this setting the user’s data refers to the ID, image, predicted probability and the actual true value.",
       "textFull": "text full",
       "references": [
         "http://google.ch",
         "http://google.ch"
       ],
-      "highlightLaw": [1],
+      "highlightLaw": [],
       "highlightIT": [],
-      "highlightEconomy": [1],
-      "highlightApp": [1]
-   },
+      "highlightEconomy": [],
+      "highlightApp": []
+    },
     {
       "id": 2,
-      "title": "Test title2",
-      "textCondensed": "text condensed",
+      "title": "Encryption",
+      "textCondensed": "The goal is to design an end-to-end system that guarantees safety during transfer and safety during storage of the user’s data. We will use the newest encryption standards to protect the user’s data during transfer and storage. Encryption transforms data that is unreadable by anyone who does not have a decryption key and hence turns the personal data into pseudonymised data. So even if our company encounters a data breach during file transfer or storage, the data obtained by an attacker will be nonsense. So when the user uploads the image for analysis, we transfer the image and user’s ID using a secure socket layer (SSL) protocol which encrypts the data during transfer. To enforce maximum security, we will use server side encryption to safe the user’s ID and image on our server and ensure encryption during storage.",
       "textFull": "text full",
       "references": [
         "http://google.ch",
         "http://google.ch"
       ],
       "highlightLaw": [1],
-      "highlightIT": [],
+      "highlightIT": [2],
       "highlightEconomy": [1],
-      "highlightApp": [1]
+      "highlightApp": []
+    },
+    {
+      "id": 3,
+      "title": "Authentication and Authorization",
+      "textCondensed": "To comply with the GDPR, we will control the data stored on our server. In this setting, the user authenticates using the ID generated when the user transfers an image. We use access control lists (ACL) to restrict access to the IDs and images stored on our server. ACLs allow us to grant permission that each user can request to retrieve and/or delete the corresponding image with a REST request. Hence users are only able to retrieve or delete their own taken images. Furthermore, only our company has access to the users’ data: Any request from other companies on our users’ data will be rejected.",
+      "textFull": "text full",
+      "references": [
+        "http://google.ch",
+        "http://google.ch"
+      ],
+      "highlightLaw": [],
+      "highlightIT": [],
+      "highlightEconomy": [],
+      "highlightApp": []
+    },
+    {
+      "id": 4,
+      "title": "Where is my data stored?",
+      "textCondensed": "To further comply with the GDPR, our server is located in Switzerland and therefore any data will never leave the country.",
+      "textFull": "text full",
+      "references": [
+        "http://google.ch",
+        "http://google.ch"
+      ],
+      "highlightLaw": [],
+      "highlightIT": [],
+      "highlightEconomy": [],
+      "highlightApp": []
     }
   ]
 }
-
-

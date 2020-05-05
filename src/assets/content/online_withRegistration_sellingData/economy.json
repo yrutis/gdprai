@@ -3,18 +3,18 @@
   "paragraphs": [
     {
       "id": 1,
-      "title": "Test title",
-      "textCondensed": "text condensed",
+      "title": "Costs in case of a data breach",
+      "textCondensed": "The costs of a data breach is lower if the data is pseudonymized.\netc etc explanation.",
       "textFull": "text full",
       "references": [
         "http://google.ch",
         "http://google.ch"
       ],
-      "highlightLaw": [2],
-      "highlightIT": [1,2],
+      "highlightLaw": [1],
+      "highlightIT": [2],
       "highlightEconomy": [1],
       "highlightApp": []
-   },
+    },
     {
       "id": 2,
       "title": "Test title2",
@@ -31,5 +31,3 @@
     }
   ]
 }
-
-

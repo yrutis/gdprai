@@ -3,18 +3,18 @@
   "paragraphs": [
     {
       "id": 1,
-      "title": "Test title",
-      "textCondensed": "text condensed",
+      "title": "Storage of your personal data",
+      "textCondensed": "Whenever we collect or process personal data, we will keep it for as long as is relevant for the purpose for which it was collected.\n\nWe use pseudonymization to protect your personal and sensitive data against loss or other forms of unlawful processing. This technique also enables us to comply with the GDPR principle of data minimisation.\n\nWe endeavour, through pseudonymization, to replacing any identifying characteristics of data with a pseudonym, or, in other words, a value which does not allow the data subject to be directly identified.",
       "textFull": "text full",
       "references": [
         "http://google.ch",
         "http://google.ch"
       ],
       "highlightLaw": [1],
-      "highlightIT": [],
-      "highlightEconomy": [1],
-      "highlightApp": [1]
-   },
+      "highlightIT": [2],
+      "highlightEconomy": [],
+      "highlightApp": []
+    },
     {
       "id": 2,
       "title": "Test title2",
@@ -31,5 +31,3 @@
     }
   ]
 }
-
-

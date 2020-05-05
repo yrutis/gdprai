@@ -13,7 +13,7 @@
   </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid show-fullscreen">
   <ng-container *ngIf="settingsVisible">
     <div class="p-4 settings-box my-2">
     <div class="row">
@@ -124,4 +124,9 @@
 
   </div>
 
+</div>
+<div class="container-fluid hide-fullscreen">
+  <div class="alert-warning p-4 mt-2">
+    <p class="mb-0"><fa-icon [icon]="['fas','exclamation-triangle']" class="mr-2"></fa-icon>Please use a screen with a width of at least 1440px in order to properly display the app.</p>
+  </div>
 </div>

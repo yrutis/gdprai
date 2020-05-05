@@ -65,7 +65,11 @@ $md-compact-accent: (
   )
 );
 
-@include mat-core();
+$custom-typography: mat-typography-config(
+  $font-family: 'Lato'
+);
+@include mat-core($custom-typography);
+
 $compact-app-primary: mat-palette($md-compact-primary);
 $compact-app-accent: mat-palette($md-compact-accent, A200, A100, A400);
 $compact-app-warn: mat-palette($mat-red);
@@ -135,6 +139,7 @@ $compact-app-theme: mat-light-theme($compact-app-primary, $compact-app-accent, $
 
 body {
   font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
 }
 
 h6 {
@@ -159,3 +164,41 @@ h6 {
   padding-left: 30px !important;
 }
 
+.padding-panel .mat-expansion-panel-header {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.padding-panel .mat-expansion-panel-body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.mat-expansion-panel:not([class*='mat-elevation-z']) {
+  box-shadow: none;
+}
+
+
+.mat-accordion .mat-expansion-panel:first-of-type, .mat-accordion .mat-expansion-panel:last-of-type {
+  border-radius: 0px !important;
+}
+
+.show-fullscreen{
+  display: block;
+}
+
+.hide-fullscreen{
+  display: none;
+}
+
+
+@media screen and (max-width: 1439px)  {
+  .show-fullscreen{
+    display: none;
+  }
+
+  .hide-fullscreen{
+    display: block;
+  }
+}

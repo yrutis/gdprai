@@ -1,64 +1,112 @@
 <div *ngIf="screenId === 'result'">
-    <div class="phonewrapper">
-      <div class="p-4 mt-4">
-        <div class="row">
-          <div class="col-12">
-              <h6>
-                <fa-icon [icon]="['fas', 'bars']" class="mr-2"></fa-icon>
-                Analysing Throat
-                <fa-icon [icon]="['fas', 'redo-alt']" class="float-right" ngbTooltip="Reset App" (click)="reset()"></fa-icon>
-              </h6>
-              <hr>
-          </div>
-          <div class="col-12">
-            <h6>Result</h6>
-          </div>
-          <div class="col-md-7">
-            <h5 class="disease-header-style ml-2">Tonsillitis</h5>
-            <p class="ml-2">Tonsillitis is inflammation of the tonsils, typically of rapid onset.
-              It is a type of pharyngitis.
-              Symptoms may include sore throat, fever, enlargement of the tonsils, trouble swallowing, and large lymph nodes
-              around the neck.
-              Complications include peritonsillar abscess.<a href='https://google.com'>Learn more</a></p>
-          </div>
-          <div class="col-md-5">
-            <circle-progress [percent]="85" [radius]="50"></circle-progress>
-          </div>
+  <div class="phonewrapper">
+    <div class="p-4 mt-4">
+      <div class="row">
+        <div class="col-12">
+          <h6>
+            <fa-icon [icon]="['fas', 'bars']" class="mr-2"></fa-icon>
+            Analysing Throat
+            <fa-icon [icon]="['fas', 'redo-alt']" class="float-right" ngbTooltip="Reset App"
+                     (click)="reset()"></fa-icon>
+          </h6>
+          <hr>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <h6>Recommended Plan of action</h6>
-          </div>
-          <div class="col-12">
-            <ul class="ml-2 mt-2">
-              <li>
-                <fa-icon [icon]="['fas', 'user-md']"></fa-icon>
-                Visit a general practitioner
-              </li>
-              <hr>
-              <li>
-                <fa-icon [icon]="['fas', 'running']"></fa-icon>
-                Don't do sports
-              </li>
-              <hr>
-              <li>
-                <fa-icon [icon]="['fas', 'glass-whiskey']"></fa-icon>
-                Drink cold water
-              </li>
-              <hr>
-              <li>
-                <fa-icon [icon]="['fas', 'coffee']"></fa-icon>
-                Drink cold tea
-              </li>
-              <hr>
-            </ul>
-          </div>
+        <div class="col-12">
+          <h6>Result</h6>
         </div>
-
+        <div class="col-md-7">
+          <h5 class="disease-header-style ml-2">Tonsillitis</h5>
+          <p class="ml-2">Tonsillitis is inflammation of the tonsils, typically of rapid onset.
+            It is a type of pharyngitis.
+            Symptoms may include sore throat, fever, enlargement of the tonsils, trouble swallowing, and large lymph
+            nodes
+            around the neck.
+            Complications include peritonsillar abscess.<a href='https://google.com'>Learn more</a></p>
+        </div>
+        <div class="col-md-5">
+          <circle-progress [percent]="85" [radius]="50"></circle-progress>
+        </div>
       </div>
+      <div class="row">
+        <div class="col-12">
+          <h6>Recommended Plan of action</h6>
+        </div>
+        <div class="col-12">
+          <ul class="ml-2 mt-2">
+            <li>
+              <fa-icon [icon]="['fas', 'user-md']"></fa-icon>
+              Visit a general practitioner
+            </li>
+            <hr>
+            <li>
+              <fa-icon [icon]="['fas', 'running']"></fa-icon>
+              Don't do sports
+            </li>
+            <hr>
+            <li>
+              <fa-icon [icon]="['fas', 'glass-whiskey']"></fa-icon>
+              Drink cold water
+            </li>
+            <hr>
+            <li>
+              <fa-icon [icon]="['fas', 'coffee']"></fa-icon>
+              Drink cold tea
+            </li>
+            <hr>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <button mat-flat-button color="primary" class="rounded-0 mx-auto" (click)="screenId = 'validate'">Validate
+          result with practitioner
+        </button>
+      </div>
+
     </div>
-    <div class="phone-overlay"></div>
+  </div>
+  <div class="phone-overlay"></div>
 </div>
+
+<div *ngIf="screenId === 'validate'">
+  <div class="phonewrapper">
+    <div class="p-4 mt-4">
+      <div class="row">
+        <div class="col-12">
+          <h6>
+            <fa-icon [icon]="['fas', 'bars']" class="mr-2"></fa-icon>
+            Analysing Throat
+            <fa-icon [icon]="['fas', 'redo-alt']" class="float-right" ngbTooltip="Reset App"
+                     (click)="reset()"></fa-icon>
+          </h6>
+          <hr>
+        </div>
+        <div class="col-12">
+          <h6>Validate Result</h6>
+        </div>
+        <div class="col-12">
+          Please scan the QR-Code provided by your doctor <fa-icon [icon]="['fas','info-circle']" class="ml-2 pointer" ngbTooltip="Hint: The doctor presents a QR code according to his evaluation. There is a QR code for 'user has disease' and 'user does not have the disease'"></fa-icon>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12">
+          <button mat-flat-button color="primary" class="rounded-0 mx-auto" (click)="scanQr()">
+            <fa-icon [icon]="qrScanning ? ['fas', 'spinner'] : ['fas', 'qrcode']" [spin]="qrScanning" class="mr-2"></fa-icon>
+            Scan
+          </button>
+        </div>
+        <div class="col-12 mt-3 img-wrapper" *ngIf="qrScanning">
+          <img src="assets/images/qrcode.png" />
+        </div>
+        <div class="col-12 mt-3 img-wrapper" *ngIf="qrScanned">
+          <fa-icon [icon]="['fas','check']" class="mr-2"></fa-icon> You have scanned the qr code successfully!
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="phone-overlay"></div>
+</div>
+
 
 <div *ngIf="screenId === 'upload'">
   <div class="phonewrapper">
@@ -68,7 +116,8 @@
           <h6>
             <fa-icon [icon]="['fas', 'bars']" class="mr-2"></fa-icon>
             Analysing Throat
-            <fa-icon [icon]="['fas', 'redo-alt']" class="float-right" ngbTooltip="Reset App" (click)="reset()"></fa-icon>
+            <fa-icon [icon]="['fas', 'redo-alt']" class="float-right" ngbTooltip="Reset App"
+                     (click)="reset()"></fa-icon>
           </h6>
           <hr>
         </div>
@@ -77,7 +126,10 @@
             <h6>Take an Image of your throat</h6>
           </div>
           <div class="col-12">
-            <button mat-flat-button color="primary" class="rounded-0" (click)="imageUploaded = true"><fa-icon [icon]="['fas', 'image']"></fa-icon> Choose Image</button>
+            <button mat-flat-button color="primary" class="rounded-0" (click)="imageUploaded = true">
+              <fa-icon [icon]="['fas', 'image']"></fa-icon>
+              Choose Image
+            </button>
           </div>
           <div class="col-12 mt-3" *ngIf="imageUploaded">
             <h6>Your Image</h6>
@@ -86,8 +138,14 @@
             <img src="assets/images/disease.png" class="disease-img"/>
           </div>
           <div class="col-7" *ngIf="imageUploaded">
-            <p><fa-icon [icon]="['fas', 'check']"></fa-icon> The image you have chosen is valid. You can start analyzing for diseases.</p>
-            <button mat-flat-button color="primary" class="rounded-0 mt-2" (click)="startAnalyzing()"><fa-icon [icon]="['fas', 'user-md']"></fa-icon> Analyze Image</button>
+            <p>
+              <fa-icon [icon]="['fas', 'check']"></fa-icon>
+              The image you have chosen is valid. You can start analyzing for diseases.
+            </p>
+            <button mat-flat-button color="primary" class="rounded-0 mt-2" (click)="startAnalyzing()">
+              <fa-icon [icon]="['fas', 'user-md']"></fa-icon>
+              Analyze Image
+            </button>
           </div>
         </ng-container>
       </div>
@@ -117,23 +175,29 @@
             </mat-form-field>
           </div>
           <div class="col-12">
-            <mat-checkbox checked><span class="agb-checkbox">Accept <span appClickStopPropagation class="agb-link" (click)="displayAgb = true">AGB</span></span></mat-checkbox>
+            <mat-checkbox checked><span class="agb-checkbox">Accept <span appClickStopPropagation class="agb-link"
+                                                                          (click)="displayAgb = true">AGB</span></span>
+            </mat-checkbox>
           </div>
           <div class="col-12" *ngIf="displayAgb">
             <p>
-              In den allgemeinen Geschäftsbedingungen fasst der Online-Verkäufer alle rechtlichen Aspekte des Geschäfts zusammen. Sobald der Kunde diesem Dokument zugestimmt hat, ist es integraler Bestandteil des Kaufvertrags.
+              In den allgemeinen Geschäftsbedingungen fasst der Online-Verkäufer alle rechtlichen Aspekte des Geschäfts
+              zusammen. Sobald der Kunde diesem Dokument zugestimmt hat, ist es integraler Bestandteil des Kaufvertrags.
 
-              In der Schweiz können die gesetzlichen Grundlagen für den Verkauf von Gütern oder Dienstleistungen über den Vertrag und die Vertragsbedingungen verändert werden. In der Regel fasst ein Händler alle seine Verkaufsbedingungen in einem als "AGB" bezeichneten Dokument zusammen. Dabei handelt es sich um eine Form der rechtlichen Absicherung. Genauere Informationen zu den gesetzlichen Verpflichtungen des Betreibers finden sich in dem entsprechenden Kapitel:
+              In der Schweiz können die gesetzlichen Grundlagen für den Verkauf von Gütern oder Dienstleistungen über
+              den Vertrag und die Vertragsbedingungen verändert werden. In der Regel fasst ein Händler alle seine
+              Verkaufsbedingungen in einem als "AGB" bezeichneten Dokument zusammen. Dabei handelt es sich um eine Form
+              der rechtlichen Absicherung. Genauere Informationen zu den gesetzlichen Verpflichtungen des Betreibers
+              finden sich in dem entsprechenden Kapitel:
             </p>
           </div>
           <div class="col-12">
-            <button mat-flat-button color="primary" class="rounded-0 float-right" (click)="screenId = 'upload'">Login</button>
+            <button mat-flat-button color="primary" class="rounded-0 float-right" (click)="screenId = 'upload'">Login
+            </button>
             <button mat-flat-button color="accent" class="rounded-0 float-right mr-2" [disabled]="true">Signup</button>
           </div>
         </div>
       </div>
-
-
 
 
     </div>
