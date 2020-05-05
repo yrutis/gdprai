@@ -45,7 +45,7 @@
           <mat-radio-group aria-label="Select an option" formControlName="registration" class="app-radio-group">
             <mat-radio-button value="withRegistration" [disabled]="settingsGroup.get('type').value === 'offline'">With Registration
             </mat-radio-button>
-            <mat-radio-button value="anonymous">Anonymous</mat-radio-button>
+            <mat-radio-button value="withoutRegistration">Without Registration</mat-radio-button>
           </mat-radio-group>
         </div>
         <div class="col-3">
@@ -117,7 +117,11 @@
       </div>
       <div class="row">
         <div class="col-12">
-          <app-animations></app-animations>
+          <app-animations
+            [applicationType]="applicationType"
+            [registrationType]="registrationType"
+            [sellingDataType]="sellingDataType"
+          ></app-animations>
         </div>
       </div>
     </div>

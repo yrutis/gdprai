@@ -29,5 +29,20 @@
       "highlightEconomy": [1],
       "highlightApp": [1]
     }
+  ,
+    {
+      "id": 3,
+      "title": "Test title3",
+      "textCondensed": "tasdasdasdsed",
+      "textFull": "text full",
+      "references": [
+        "http://google.ch",
+        "http://google.ch"
+      ],
+      "highlightLaw": [2],
+      "highlightIT": [],
+      "highlightEconomy": [1],
+      "highlightApp": [1]
+    }
   ]
 }

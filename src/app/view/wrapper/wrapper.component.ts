@@ -34,7 +34,7 @@ export class WrapperComponent implements OnInit, OnDestroy {
 
     this.settingsGroup.get('type').valueChanges.pipe(takeUntil(this.componentDestroyed$)).subscribe(value => {
       if (value === 'offline') {
-        this.settingsGroup.get('registration').setValue('anonymous');
+        this.settingsGroup.get('registration').setValue('withoutRegistration');
         this.settingsGroup.get('sellData').setValue('notSellingData');
       }
     });
