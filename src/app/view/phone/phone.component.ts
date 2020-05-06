@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 import {StateService} from '../../service/state.service';
 
 @Component({
@@ -6,7 +6,7 @@ import {StateService} from '../../service/state.service';
   templateUrl: './phone.component.html',
   styleUrls: ['./phone.component.scss']
 })
-export class PhoneComponent implements OnInit {
+export class PhoneComponent implements OnInit, OnChanges {
 
   @Input()
   applicationType: string;
@@ -30,9 +30,16 @@ export class PhoneComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (this.applicationType === 'offline') {
+    this.init();
+  }
+
+  private init() {
+    if (this.registrationType === 'withoutRegistration') {
       this.screenId = 'upload';
       this.resetPage = 'upload';
+    } else {
+      this.screenId = 'login';
+      this.resetPage = 'login';
     }
   }
 
@@ -65,5 +72,9 @@ export class PhoneComponent implements OnInit {
       this.screenId = 'result';
       clearInterval(int);
     }, 2000);
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    this.init();
   }
 }

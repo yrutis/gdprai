@@ -15,7 +15,6 @@ export class WrapperComponent implements OnInit, OnDestroy {
   applicationType = 'online';
   registrationType = 'withRegistration';
   sellingDataType = 'sellingData';
-  contentFidelity = 'hifi';
 
   settingsGroup: FormGroup;
   settingsVisible = true;
@@ -29,7 +28,6 @@ export class WrapperComponent implements OnInit, OnDestroy {
       type: ['online'],
       registration: ['withRegistration'],
       sellData: ['sellingData'],
-      contentFidelity: ['hifi']
     });
 
     this.settingsGroup.get('type').valueChanges.pipe(takeUntil(this.componentDestroyed$)).subscribe(value => {
@@ -61,8 +59,6 @@ export class WrapperComponent implements OnInit, OnDestroy {
     this.applicationType = this.settingsGroup.get('type').value;
     this.registrationType = this.settingsGroup.get('registration').value;
     this.sellingDataType = this.settingsGroup.get('sellData').value;
-    this.contentFidelity = this.settingsGroup.get('contentFidelity').value;
     this.settingsVisible = false;
-
   }
 }

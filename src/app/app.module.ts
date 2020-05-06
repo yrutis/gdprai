@@ -22,6 +22,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {ClickStopPropagationDirective} from './view/clickStopPropagation';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { LandingComponent } from './view/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     PhoneComponent,
     AspectsComponent,
     AnimationsComponent,
-    ClickStopPropagationDirective
+    ClickStopPropagationDirective,
+    LandingComponent
   ],
   imports: [
     BrowserModule,

@@ -19,10 +19,23 @@
             </mat-panel-title>
           </mat-expansion-panel-header>
           <p class="description-text">{{p.textCondensed}}</p>
+          <ul *ngIf="p.references.length > 0" class="linklist">
+            <li *ngFor="let ref of p.references">
+              <a [href]="ref.link" target="_blank">{{ref.name}}</a>
+            </li>
+          </ul>
         </mat-expansion-panel>
       </mat-accordion>
 
 
+    </div>
+    <div class="col-12">
+      <hr>
+      <ul *ngIf="page.references.length > 0" class="linklist">
+        <li *ngFor="let ref of page.references">
+          <a [href]="ref.link" target="_blank">{{ref.name}}</a>
+        </li>
+      </ul>
     </div>
 <!--  <div class="col-12 px-4 pt-1" *ngFor="let p of page.paragraphs" (mouseenter)="highlight(p)" (mouseleave)="unhighlight()" [class.highlight]="highlightIds.includes(p.id)">-->
 <!--    <h6>{{p.title}}</h6>-->

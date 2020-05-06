@@ -7,8 +7,14 @@
       "textCondensed": "The costs of a data breach is lower if the data is pseudonymized.\netc etc explanation.",
       "textFull": "text full",
       "references": [
-        "http://google.ch",
-        "http://google.ch"
+        {
+          "link": "http://google.ch",
+          "name": "Link1"
+        },
+        {
+          "link": "http://google.ch",
+          "name": "Link2"
+        }
       ],
       "highlightLaw": [1],
       "highlightIT": [2],
@@ -21,13 +27,29 @@
       "textCondensed": "text condensed",
       "textFull": "text full",
       "references": [
-        "http://google.ch",
-        "http://google.ch"
+        {
+          "link": "http://google.ch",
+          "name": "Link1"
+        },
+        {
+          "link": "http://google.ch",
+          "name": "Link2"
+        }
       ],
       "highlightLaw": [1],
       "highlightIT": [],
       "highlightEconomy": [1],
       "highlightApp": [1]
+    }
+  ],
+  "references": [
+    {
+      "link": "http://google.ch",
+      "name": "Link1"
+    },
+    {
+      "link": "http://google.ch",
+      "name": "Link2"
     }
   ]
 }

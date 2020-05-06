@@ -28,8 +28,6 @@ export class AspectsComponent implements OnInit, OnDestroy, OnChanges {
   @Input()
   sellingDataType: string;
 
-  @Input()
-  contentFidelity: string;
 
   highlightIds: number[] = [];
 

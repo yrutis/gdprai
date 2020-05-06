@@ -1,14 +1,17 @@
 <div class="header p-3">
-  <div class="row">
-    <div class="col-6">
-      <h3>
-        Practitioner App
-      </h3>
-    </div>
-    <div class="col-6">
-      <h3>
-        <fa-icon [icon]="['fas','cog']" class="float-right mr-4 pointer" (click)="showSettings()"></fa-icon>
-      </h3>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-7">
+        <h3>
+          Medical Diagnostics with Artificial Intelligence
+        </h3>
+      </div>
+      <div class="col-5">
+        <h3>
+          <fa-icon [icon]="['fas','cog']" class="float-right mr-4 pointer" (click)="showSettings()"></fa-icon>
+          <span class="currently-selected float-right mt-2 mr-4">Currently selected: {{this.applicationType === 'online' ? 'Online' : this.applicationType === 'offline' ? 'Offline' : 'Semi Online' }} / {{this.registrationType === 'withRegistration' ? 'With Registration' : 'Without Registration'}} / {{this.sellingDataType === 'sellingData' ? 'Selling Data' : 'Not Selling Data'}}</span>
+        </h3>
+      </div>
     </div>
   </div>
 </div>
@@ -60,15 +63,7 @@
           </mat-radio-group>
         </div>
         <div class="col-3">
-          <h6>
-            <fa-icon [icon]="['fas','info-circle']" class="mr-1"></fa-icon>
-            Content Fidelity
-          </h6>
-          <mat-radio-group aria-label="Select an option" formControlName="contentFidelity" class="app-radio-group">
-            <mat-radio-button value="hifi">High Content Fidelity
-            </mat-radio-button>
-            <mat-radio-button value="lofi">Low Content Fidelity</mat-radio-button>
-          </mat-radio-group>
+
         </div>
       </div>
 
@@ -97,23 +92,20 @@
             type="law"
             [applicationType]="applicationType"
             [registrationType]="registrationType"
-            [sellingDataType]="sellingDataType"
-            [contentFidelity]="contentFidelity"></app-aspects>
+            [sellingDataType]="sellingDataType"></app-aspects>
         </div>
         <div class="col-4">  <app-aspects
           title="Perspective of Informatics"
           type="it"
           [applicationType]="applicationType"
           [registrationType]="registrationType"
-          [sellingDataType]="sellingDataType"
-          [contentFidelity]="contentFidelity"></app-aspects></div>
+          [sellingDataType]="sellingDataType"></app-aspects></div>
         <div class="col-4">  <app-aspects
           title="Perspective of Economy"
           type="economy"
           [applicationType]="applicationType"
           [registrationType]="registrationType"
-          [sellingDataType]="sellingDataType"
-          [contentFidelity]="contentFidelity"></app-aspects></div>
+          [sellingDataType]="sellingDataType"></app-aspects></div>
       </div>
       <div class="row">
         <div class="col-12">

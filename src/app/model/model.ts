@@ -3,7 +3,7 @@ export class Paragraph {
   title: string;
   textCondensed: string;
   textFull: string;
-  references: string[];
+  references: Reference[];
   highlightLaw: number[];
   highlightEconomy: number[];
   highlightIT: number[];
@@ -13,4 +13,10 @@ export class Paragraph {
 export class Page {
   type: string;
   paragraphs: Paragraph[];
+  references: Reference[];
+}
+
+export class Reference {
+  link: string;
+  name: string;
 }
