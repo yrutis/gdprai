@@ -1,0 +1,17 @@
+{
+  "type": "law",
+  "paragraphs": [
+    {
+      "id": 1,
+      "title": "No GDPR Responsibility",
+      "textCondensed": "Due to the offline aspect of the app, no personal data can be processed and collected. The GDPR will not apply.",
+      "textFull": "text full",
+      "references": [
+      ],
+      "highlightLaw": [],
+      "highlightIT": [],
+      "highlightEconomy": [],
+      "highlightApp": []
+    }
+    ]
+}
