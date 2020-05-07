@@ -4,12 +4,12 @@
     {
       "id": 1,
       "title": "Introduction to Business Model",
-      "textCondensed": "In this scenario, the firm collects and sells personalized data. Like this, it is able to personalize the interface of the app and improve the services to the benefit of the user. By selling personalized healthcare data, the company can make a lot of profit. This helps the company to provide the services for 'free', i.e. in exchange for their data, to the users. Since users can register, the data could also be used by the users themselves to pay lower health insurance fees.",
+      "textCondensed": "In this scenario, the firm collects and sells personalized data. Like this, it is able to personalize the interface of the app and improve the services to the benefit of the user. By selling personalized healthcare data, the company can make a lot of profit. This helps the company to provide their services at no costs, but in exchange for the user's data. Since users can register, the data could also be used by the users themselves to pay lower health insurance fees.",
       "textFull": "text full",
       "references": [
       ],
       "highlightLaw": [1],
-      "highlightIT": [2],
+      "highlightIT": [1],
       "highlightEconomy": [1],
       "highlightApp": []
     },
@@ -20,10 +20,10 @@
       "textFull": "text full",
       "references": [
       ],
-      "highlightLaw": [1],
+      "highlightLaw": [4],
       "highlightIT": [],
-      "highlightEconomy": [1],
-      "highlightApp": [1]
+      "highlightEconomy": [2],
+      "highlightApp": []
     },
     {
       "id": 3,
@@ -32,10 +32,10 @@
       "textFull": "text full",
       "references": [
       ],
-      "highlightLaw": [1],
+      "highlightLaw": [4],
       "highlightIT": [],
-      "highlightEconomy": [1],
-      "highlightApp": [1]
+      "highlightEconomy": [3],
+      "highlightApp": []
     },
     {
       "id": 4,
@@ -44,10 +44,10 @@
       "textFull": "text full",
       "references": [
       ],
-      "highlightLaw": [1],
-      "highlightIT": [],
-      "highlightEconomy": [1],
-      "highlightApp": [1]
+      "highlightLaw": [5],
+      "highlightIT": [3],
+      "highlightEconomy": [4],
+      "highlightApp": []
     },
     {
       "id": 5,
@@ -56,10 +56,10 @@
       "textFull": "text full",
       "references": [
       ],
-      "highlightLaw": [1],
-      "highlightIT": [],
-      "highlightEconomy": [1],
-      "highlightApp": [1]
+      "highlightLaw": [5],
+      "highlightIT": [3],
+      "highlightEconomy": [5],
+      "highlightApp": []
     }
   ,
     {
@@ -69,10 +69,10 @@
       "textFull": "text full",
       "references": [
       ],
-      "highlightLaw": [1],
+      "highlightLaw": [],
       "highlightIT": [],
-      "highlightEconomy": [1],
-      "highlightApp": [1]
+      "highlightEconomy": [],
+      "highlightApp": []
     }
   ],
   "references": [

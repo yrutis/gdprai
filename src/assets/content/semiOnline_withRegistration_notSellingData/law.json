@@ -61,5 +61,11 @@
       "highlightEconomy": [],
       "highlightApp": []
     }
-    ]
+    ],
+  "references": [
+    {
+      "name": "GDPR",
+      "link": "https://gdpr-info.eu/"
+    }
+  ]
 }

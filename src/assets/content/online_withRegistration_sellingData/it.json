@@ -12,15 +12,15 @@
           "name": "The Design of Rijndael: AES - The Advanced Encryption Standard"
         }
       ],
-      "highlightLaw": [],
-      "highlightIT": [],
-      "highlightEconomy": [],
+      "highlightLaw": [1],
+      "highlightIT": [1],
+      "highlightEconomy": [1],
       "highlightApp": []
     },
     {
       "id": 2,
       "title": "Encryption",
-      "textCondensed": "The goal is to design an end-to-end system that guarantees safety during transfer and safety during storage of the user’s data. In order to achieve a high level of security, we will use the newest encryption standards. Encryption transforms data to text that is unreadable by anyone who does not have a decryption key and hence turns the personal data into pseudonymised data. So even if our company encounters a data breach during file transfer or storage, the data obtained by an attacker will be nonsense. So when the user uploads the image for analysis, we transfer the image and user’s ID using a secure socket layer (SSL) protocol which encrypts the data during transfer. To enforce maximum security, we will use server-side encryption to safe the user’s personal data and image on our server and ensure encryption during storage.",
+      "textCondensed": "The goal is to design an end-to-end system that guarantees safety during transfer and safety during storage of the user’s data. In order to achieve a high level of security, we will use the newest encryption standards. Encryption transforms data to text that is unreadable by anyone who does not have a decryption key and hence turns the personal data into pseudonymised data. So even if our company encounters a data breach during file transfer or storage, the data obtained by an attacker will be nonsense. So when the user uploads the image for analysis, we transfer the image and user’s ID using a secure socket layer (SSL) protocol which encrypts the data during transfer. To enforce maximum security, we will use server-side encryption to safe the user’s personal data and image on our server and ensure encryption during storage.\nIn this setting, the data can be sold. If the data is sold we decrypt the data and encrypt it with a new key that we share with the buyer. The data is then transferred to the other company.",
       "textFull": "text full",
       "references": [
         {
@@ -32,9 +32,9 @@
           "name": "SSL"
         }
       ],
-      "highlightLaw": [1],
+      "highlightLaw": [3],
       "highlightIT": [2],
-      "highlightEconomy": [1],
+      "highlightEconomy": [],
       "highlightApp": []
     },
     {
@@ -48,9 +48,9 @@
           "name": "ACL"
         }
       ],
-      "highlightLaw": [],
-      "highlightIT": [],
-      "highlightEconomy": [],
+      "highlightLaw": [5],
+      "highlightIT": [3],
+      "highlightEconomy": [4,5],
       "highlightApp": []
     },
     {
@@ -59,8 +59,8 @@
       "textCondensed": "To further comply with the GDPR, our server is located in Switzerland and therefore the encrypted data is stored in Switzerland. If the data is sold, we are not responsible where the data of the other company is located.",
       "textFull": "text full",
       "references": [],
-      "highlightLaw": [],
-      "highlightIT": [],
+      "highlightLaw": [3],
+      "highlightIT": [4],
       "highlightEconomy": [],
       "highlightApp": []
     },
