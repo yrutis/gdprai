@@ -4,7 +4,7 @@
     {
       "id": 1,
       "title": "Introduction to Business Model",
-      "textCondensed": "In this scenario, the firm collects personalized data. Like this, it is able to personalize the interface of the app and improve the services to the benefit of the user. However, the data is not sold, which excludes competitors from insights gained by processing the data. In return for not selling the data, the company could charge consumers a one-time download or a recurring subscription fee. Since users can register, the data could also be used by the users themselves to pay lower health insurance fees.",
+      "textCondensed": "In this scenario, the firm collects and sells personalized data. Like this, it is able to personalize the interface of the app and improve the services to the benefit of the user. By selling personalized healthcare data, the company can make a lot of profit. This helps the company to provide the services for 'free', i.e. in exchange for their data, to the users. Since users can register, the data could also be used by the users themselves to pay lower health insurance fees.",
       "textFull": "text full",
       "references": [
       ],
@@ -16,7 +16,7 @@
     {
       "id": 2,
       "title": "Advantages from the Firm's Perspective",
-      "textCondensed": "For the firm, the following advantages arise from this model. The collected data helps the firm to improve its AI model, its services and marketing capabilities. Further, the personalized data can be used for targeted advertising or applying methods of price or service discrimination. Users' switching costs to other apps can be increased by personalising the content presented. Like this, consumer loyalty is easier to establish. As no data are sold, competitors cannot benefit from the knowledge gained from them either.",
+      "textCondensed": "For the firm, the following advantages arise from this model. The collected data helps the firm to improve its AI model, its services and marketing capabilities. Further, the personalized data can be used for targeted advertising or applying methods of price or service discrimination. Selling personalized data will enable the firm to earn enough in order to provide the app for 'free'. This will attract more customers who are less concerned about privacy protection. Further, users' switching costs to other apps can be increased by personalising the content presented. Like this, consumer loyalty is easier to establish.",
       "textFull": "text full",
       "references": [
       ],
@@ -28,7 +28,7 @@
     {
       "id": 3,
       "title": "Disadvantages from the Firm's Perspective",
-      "textCondensed": "For the firm, the following disadvantages arise from this model. The firm risks data breaches and liability issues. Therefore, the firm has to invest in data protection and should be informed about GDPR regulations. In addition, data cannot be used for external purposes like selling or renting data. As far as users are concerned, they might be deterred by the fact that the firm collects all their personal healthcare data. There is a risk of reputational and stock market loss due to misuse of data or data breaches. This will lead to additional costs for consumer relationship management. In addition, the company risks collecting 'false' data when users willfully give incorrect answers.",
+      "textCondensed": "For the firm, the following disadvantages arise from this model. The firm risks data breaches and liability issues. Therefore, the firm has to invest in data protection and should be informed about GDPR regulations. As far as users are concerned, they might be deterred by the sale of their personalized data. It is hard to gain their confidence which implies higher costs for customer relationship management. There is also a high risk of reputational loss due to misuse of data or data breaches. In addition, a further disadvantage may arise if the sale of the data creates the same advantages from processing the data for competitors as for the firm.",
       "textFull": "text full",
       "references": [
       ],
@@ -40,7 +40,7 @@
     {
       "id": 4,
       "title": "Advantages from the User's Perspective",
-      "textCondensed": "For the user, the following advantages arise from this model. Since no data is sold, there will not be given any bargaining power to third parties. With personalized data being collected, users can profit from the targeted advertisement which reduces searching costs and from possible discounts (e.g. on insurance fees). Further, they can benefit from personalised content and statistics. In return for their more detailed data, users can use the app at a lower price.",
+      "textCondensed": "For the user, the following advantages arise from this model. With personalized data being collected, users can profit from the targeted advertisement which reduces searching costs and from possible discounts (e.g. on insurance fees). Further, they can benefit from personalised content and statistics. In exchange for their data, users will be able to access the app for free.",
       "textFull": "text full",
       "references": [
       ],
@@ -52,7 +52,7 @@
     {
       "id": 5,
       "title": "Disadvantages from the User's Perspective",
-      "textCondensed": "For the user, the following disadvantages arise from this model. Most importantly, users will feel concerned about the loss of privacy. There is an unwanted perception of observation and the users might perceive a loss of control over their sensitive data. Further, consumers will have information costs in terms of privacy protection and sign-up costs when entering the app. Personal costs due to data breaches might arise. Further, as a target of price and service differentiation, they could sacrifice higher costs.",
+      "textCondensed": "For the user, the following disadvantages arise from this model. Most importantly, users will feel concerned about the loss of privacy. There is an unwanted perception of observation and the users perceive a loss of control over their sensitive data. Further, consumers will have high information costs in terms of privacy protection and sign-up costs when entering the app. Personal costs due to data breaches might arise. Further, as a target of price and service differentiation, they could sacrifice higher costs, also from third parties.  Since the data is personalized, there will be given bargaining power to third parties.",
       "textFull": "text full",
       "references": [
       ],
@@ -65,7 +65,7 @@
     {
       "id": 6,
       "title": "The Social Perspective",
-      "textCondensed": "Since personalized data is collected, socially beneficial predictions can be made by the company in detail. Especially in the healthcare sector, these predictions can be very valuable for governments and healthcare institutions. Furthermore, the collected data can only be used within the company to make individually differentiated predictions about non-users. This is known as 'negative privacy externalities' and affects uninvolved third parties negatively. These externalities can be limited by this model to the scope of the company.",
+      "textCondensed": "Since personalized data is collected, socially beneficial predictions can be made in detail. Especially in the healthcare sector, these predictions can be very valuable for governments and healthcare institutions. On the other side, the collected data can be used to make individually differentiated predictions about non-users. This is known as 'negative privacy externalities' and affects uninvolved third parties negatively. These externalities cannot be limited by this model.",
       "textFull": "text full",
       "references": [
       ],
