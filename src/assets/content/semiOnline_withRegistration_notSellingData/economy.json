@@ -1,0 +1,88 @@
+{
+  "type": "economy",
+  "paragraphs": [
+    {
+      "id": 1,
+      "title": "Introduction to Business Model",
+      "textCondensed": "In this scenario, the firm collects and sells non-personalized data. Like this, consumers are less concerned about giving their healthcare data to any third party. Further, they can benefit from app improvements made based on the internal processing of the non-personalized data. The processed data can also help public third parties to make predictions or derive explanations for social health patterns.",
+      "textFull": "text full",
+      "references": [
+      ],
+      "highlightLaw": [1],
+      "highlightIT": [2],
+      "highlightEconomy": [1],
+      "highlightApp": []
+    },
+    {
+      "id": 2,
+      "title": "Advantages from the Firm's Perspective",
+      "textCondensed": "For the firm, the following advantages arise from this model. The collected data helps the firm to improve its AI model, its services and marketing capabilities. There is no risk of reputational loss due to misuse of data since the collected data is not directly linked to individuals' identification details. Selling the non-personalized data will give additional income to the firm.",
+      "textFull": "text full",
+      "references": [
+      ],
+      "highlightLaw": [1],
+      "highlightIT": [],
+      "highlightEconomy": [1],
+      "highlightApp": [1]
+    },
+    {
+      "id": 3,
+      "title": "Disadvantages from the Firm's Perspective",
+      "textCondensed": "For the firm, the following disadvantages arise from this model. Firstly, non-personalized data cannot be used for applying methods of price or service discrimination. The firm risks data breaches and liability issues. Therefore, the firm has to invest in data protection and should be informed about GDPR regulations. Furthermore, users' switching costs to other apps cannot be increased by personalising the content presented. As far as users are concerned, it is also harder for the company to gain consumers confidence, while users might be already deterred by the sale of non-personalized data. Overall, there might sill arise competitive disadvantages compared to companies that collect and sell personalized data. In addition, a further disadvantage may arise if the sale of the data creates the same advantages from processing the data for competitors as for the firm.",
+      "textFull": "text full",
+      "references": [
+      ],
+      "highlightLaw": [1],
+      "highlightIT": [],
+      "highlightEconomy": [1],
+      "highlightApp": [1]
+    },
+    {
+      "id": 4,
+      "title": "Advantages from the User's Perspective",
+      "textCondensed": "For the user, the following advantages arise from this model. Users might feel less concerned about the loss of privacy. Since the data is not personalized, there will not be given any bargaining power to third parties. Further, the consumers will have only few information costs in terms of privacy protection and no sign-up costs when entering the app. Personal costs due to data breaches will not arise.",
+      "textFull": "text full",
+      "references": [
+      ],
+      "highlightLaw": [1],
+      "highlightIT": [],
+      "highlightEconomy": [1],
+      "highlightApp": [1]
+    },
+    {
+      "id": 5,
+      "title": "Disadvantages from the User's Perspective",
+      "textCondensed": "For the user, the following disadvantages arise from this model. With no personalized data being collected, users can neither profit from the targeted advertisement which reduces searching costs nor from possible discounts (e.g. on insurance fees). Further, they cannot benefit from personalised content and statistics. However, since their data is sold to third parties they might be concerned about the loss of control over their data. ",
+      "textFull": "text full",
+      "references": [
+      ],
+      "highlightLaw": [1],
+      "highlightIT": [],
+      "highlightEconomy": [1],
+      "highlightApp": [1]
+    }
+  ,
+    {
+      "id": 6,
+      "title": "The Social Perspective",
+      "textCondensed": "Since non-personalized data is collected, socially beneficial predictions can be made. Especially in the healthcare sector, these predictions can be very valuable for governments and healthcare institutions. Furthermore, the data collected cannot be used to make individually differentiated predictions about non-users. This is known as 'negative privacy externalities' and would affect uninvolved third parties negatively. These externalities can be prevented by this model.",
+      "textFull": "text full",
+      "references": [
+      ],
+      "highlightLaw": [1],
+      "highlightIT": [],
+      "highlightEconomy": [1],
+      "highlightApp": [1]
+    }
+  ],
+  "references": [
+    {
+      "link": "http://google.ch",
+      "name": "Link1"
+    },
+    {
+      "link": "http://google.ch",
+      "name": "Link2"
+    }
+  ]
+}

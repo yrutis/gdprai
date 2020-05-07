@@ -1,0 +1,88 @@
+{
+  "type": "economy",
+  "paragraphs": [
+    {
+      "id": 1,
+      "title": "Introduction to Business Model",
+      "textCondensed": "In this scenario, the firm will neither collect data for own purposes nor for selling them to third parties. This prevents the company from making money and increasing efficiency by using data. On the other hand, the company saves money in ensuring compliance with GDPR regulations. In addition, users are more willing to use the app because they know that no data is collected or processed. This could even allow the company to charge consumers a one-time download fee.",
+      "textFull": "text full",
+      "references": [
+      ],
+      "highlightLaw": [1],
+      "highlightIT": [2],
+      "highlightEconomy": [1],
+      "highlightApp": []
+    },
+    {
+      "id": 2,
+      "title": "Advantages from the Firm's Perspective",
+      "textCondensed": "For the firm, the following advantages arise from this model. Since no data is collected, the firm does not need to protect them against data breaches and hacker attacks. In connection with this or the misuse of data, there is no risk that the company will be subject to liability or legal fees, reputational or stockmarket losses related to any aspect of the data. Further, there are no cost of collecting and storing data. As far as users are concerned, it is much easier for the company to establish consumer loyalty, while no user is deterred due to data protection concerns. As no data are sold, competitors cannot benefit from the knowledge gained from them either.",
+      "textFull": "text full",
+      "references": [
+      ],
+      "highlightLaw": [1],
+      "highlightIT": [],
+      "highlightEconomy": [1],
+      "highlightApp": [1]
+    },
+    {
+      "id": 3,
+      "title": "Disadvantages from the Firm's Perspective",
+      "textCondensed": "For the firm, the following disadvantages arise from this model. Firstly, the data cannot be used for internal purposes like for improving services or marketing capabilities, train the AI model or applying methods of price or service discrimination. Furthermore, users' switching costs to other apps cannot be increased by personalising the content presented. In addition, data cannot be used for external purposes like selling or renting data, working together with third parties to place the targeted advertisement. All these aspects lead to competitive disadvantages compared to companies that collect and use data.",
+      "textFull": "text full",
+      "references": [
+      ],
+      "highlightLaw": [1],
+      "highlightIT": [],
+      "highlightEconomy": [1],
+      "highlightApp": [1]
+    },
+    {
+      "id": 4,
+      "title": "Advantages from the User's Perspective",
+      "textCondensed": "For the user, the following advantages arise from this model. Most importantly, users will not feel concerned about the loss of privacy. There is no unwanted perception of observation and the users do not lose control over their personal data. Their data will not be the target of any data breaches or will give bargaining power to third parties. Further, consumers will have no information costs in terms of privacy protection or sign-up costs when entering the app.",
+      "textFull": "text full",
+      "references": [
+      ],
+      "highlightLaw": [1],
+      "highlightIT": [],
+      "highlightEconomy": [1],
+      "highlightApp": [1]
+    },
+    {
+      "id": 5,
+      "title": "Disadvantages from the User's Perspective",
+      "textCondensed": "For the user, the following advantages arise from this model. Most importantly, users will not feel concerned about the loss of privacy. There is no unwanted perception of observation and the users do not lose control over their personal data. Their data will not be the target of any data breaches or will give bargaining power to third parties. Further, consumers will have no information costs in terms of privacy protection or sign-up costs when entering the app.",
+      "textFull": "text full",
+      "references": [
+      ],
+      "highlightLaw": [1],
+      "highlightIT": [],
+      "highlightEconomy": [1],
+      "highlightApp": [1]
+    }
+  ,
+    {
+      "id": 6,
+      "title": "The Social Perspective",
+      "textCondensed": "When no data is collected, it cannot be used to make any predictions. However, especially in the healthcare sector these predictions can be very valuable for governments and healthcare institutions. On the other hand, data collected could be used to make individually differentiated predictions about non-users. This is known as 'negative privacy externalities' and would affect uninvolved third parties negatively. These externalities can be prevented by this model.",
+      "textFull": "text full",
+      "references": [
+      ],
+      "highlightLaw": [1],
+      "highlightIT": [],
+      "highlightEconomy": [1],
+      "highlightApp": [1]
+    }
+  ],
+  "references": [
+    {
+      "link": "http://google.ch",
+      "name": "Link1"
+    },
+    {
+      "link": "http://google.ch",
+      "name": "Link2"
+    }
+  ]
+}
