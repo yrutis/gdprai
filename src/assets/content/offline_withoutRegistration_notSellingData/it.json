@@ -1,0 +1,32 @@
+{
+  "type": "it",
+  "paragraphs": [
+    {
+      "id": 1,
+      "title": "What is the user’s data?",
+      "textCondensed": "The user’s data never leaves the device. Once the image is processed by the model and the result is retrieved, the picture and any metadata of the user is removed from the phone. Hence, there is no data stored or retrieved from users by our company. Consequently, the app doesn’t know if a user utilizes the app once or several times.",
+      "textFull": "text full",
+      "references": [
+      ],
+      "highlightLaw": [],
+      "highlightIT": [],
+      "highlightEconomy": [],
+      "highlightApp": []
+    },
+    {
+      "id": 2,
+      "title": "Model",
+      "textCondensed": "We use a deep learning model to get a prediction (probability of Tonsillitis) based on the user’s image. More specifically, we utilize a convolutional neural network (CNN) which are popular among image classification tasks. The animation shows how the CNN extracts relevant patterns and feeds them into a classical neural network. This network then calculates the probability of the user’s chance of having Tonsillitis. The emphasis when evaluating the model is to minimize the chance that a user has Tonsillitis but is not recognized by the model (recall measure). In this setting, the neural network is deployed on the user’s device and therefore, we have to use a CNN that requires less storage but is less accurate. Furthermore, the CNN can no longer be updated regularly using the newest pictures but requires an app update in the app store.",
+      "textFull": "text full",
+      "references": [
+        {
+          "link": "https://www.deeplearningbook.org/",
+          "name": "Deep Learning"
+        }
+      ],
+      "highlightLaw": [],
+      "highlightIT": [],
+      "highlightEconomy": [],
+      "highlightApp": []
+    }
+}

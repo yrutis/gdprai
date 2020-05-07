@@ -1,10 +1,10 @@
 {
-  "type": "IT",
+  "type": "economy",
   "paragraphs": [
     {
       "id": 1,
-      "title": "THIS IS ANONYMOUS",
-      "textCondensed": "text condensed",
+      "title": "Costs in case of a data breach",
+      "textCondensed": "The costs of a data breach is lower if the data is pseudonymized.\netc etc explanation.",
       "textFull": "text full",
       "references": [
         {
@@ -17,10 +17,10 @@
         }
       ],
       "highlightLaw": [1],
-      "highlightIT": [],
+      "highlightIT": [2],
       "highlightEconomy": [1],
-      "highlightApp": [1]
-   },
+      "highlightApp": []
+    },
     {
       "id": 2,
       "title": "Test title2",
@@ -53,5 +53,3 @@
     }
   ]
 }
-
-

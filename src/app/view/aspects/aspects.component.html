@@ -18,7 +18,7 @@
               <strong>{{p.title}}</strong>
             </mat-panel-title>
           </mat-expansion-panel-header>
-          <p class="description-text">{{p.textCondensed}}</p>
+          <p class="description-text" [innerHTML]="p.textCondensed"></p>
           <ul *ngIf="p.references.length > 0" class="linklist">
             <li *ngFor="let ref of p.references">
               <a [href]="ref.link" target="_blank">{{ref.name}}</a>

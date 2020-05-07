@@ -1,0 +1,95 @@
+{
+  "type": "it",
+  "paragraphs": [
+    {
+      "id": 1,
+      "title": "What is semi-online?",
+      "textCondensed": "Semi-online refers to a setup where the model is stored on a user’s device. This allows us to make a prediction for a user even when he/she doesn’t have an active internet connection, e.g. in rural areas or in a 3rd world country. The user’s data is transferred to our server whenever there is a connection to the internet.",
+      "textFull": "text full",
+      "references": [
+      ],
+      "highlightLaw": [],
+      "highlightIT": [],
+      "highlightEconomy": [],
+      "highlightApp": []
+    },
+    {
+      "id": 2,
+      "title": "What is the user’s data?",
+      "textCondensed": "In this setting, the user does not need to register in order to use the app. Since we still need to identify our users in order to comply with the GDPR granted rights, we generate a random ID based on a device fingerprint and 256-AES encryption. Furthermore, we store the user’s image, the predicted probability of the disease and if the user decides to share the practitioner’s evaluation with us, we also retrieve the latter.",
+      "textFull": "text full",
+      "references": [
+        {
+          "link": "https://books.google.ch/books?hl=de&lr=&id=fNaoCAAAQBAJ&oi=fnd&pg=PA1&dq=aes+encryption&ots=7iOOAIRor6&sig=befGxY_wfHIpVQj3OcD90Kii14Y#v=onepage&q=aes%20encryption&f=false",
+          "name": "The Design of Rijndael: AES - The Advanced Encryption Standard"
+        }
+      ],
+      "highlightLaw": [],
+      "highlightIT": [],
+      "highlightEconomy": [],
+      "highlightApp": []
+    },
+    {
+      "id": 3,
+      "title": "Encryption",
+      "textCondensed": "The goal is to design an end-to-end system that guarantees safety during transfer and safety during storage of the user’s data. In order to achieve a high level of security, we will use the newest encryption standards. Encryption transforms data to text that is unreadable by anyone who does not have a decryption key and hence turns the personal data into pseudonymised data. So even if our company encounters a data breach during file transfer or storage, the data obtained by an attacker will be nonsense. Whenever there is an active internet connection, the user’s data (ID, image, prediction) is sent to our server using a secure socket layer (SSL) protocol which encrypts the data during transfer. To enforce maximum security, we will use server-side encryption to safe the user’s data on our server and ensure encryption during storage.",
+      "textFull": "text full",
+      "references": [
+        {
+          "link": "https://www.cloudflare.com/learning/ssl/what-is-encryption/",
+          "name": "Encryption"
+        },
+        {
+          "link": "http://community.lightspeedsystems.com/courses/ssl-explained/",
+          "name": "SSL"
+        }
+      ],
+      "highlightLaw": [1],
+      "highlightIT": [2],
+      "highlightEconomy": [1],
+      "highlightApp": []
+    },
+    {
+      "id": 4,
+      "title": "Authentication and Authorization",
+      "textCondensed": "To comply with the GDPR, we will control the data stored on our server. In this setting, the user authenticates using the encrypted ID generated when the user transfers an image. We use access control lists (ACL) to restrict access to the IDs and images stored on our server. ACLs allow us to grant permission such that each user can request to update, retrieve or delete his/her image with a REST request. Hence users are only able to retrieve, update or delete their own taken images. Furthermore, only our company has access to the users’ data: Any request from other companies on our users’ data will be rejected.",
+      "textFull": "text full",
+      "references": [
+        {
+          "link": "https://en.wikipedia.org/wiki/Access-control_list",
+          "name": "ACL"
+        }
+      ],
+      "highlightLaw": [],
+      "highlightIT": [],
+      "highlightEconomy": [],
+      "highlightApp": []
+    },
+    {
+      "id": 5,
+      "title": "Where is my data stored?",
+      "textCondensed": "To further comply with the GDPR, our server is located in Switzerland and therefore any data will never leave the country.",
+      "textFull": "text full",
+      "references": [],
+      "highlightLaw": [],
+      "highlightIT": [],
+      "highlightEconomy": [],
+      "highlightApp": []
+    },
+    {
+      "id": 6,
+      "title": "Model",
+      "textCondensed": "We use a deep learning model to get a prediction (probability of Tonsillitis) based on the user’s image. More specifically, we utilize a convolutional neural network (CNN) which are popular among image classification tasks. The animation shows how the CNN extracts relevant patterns and feeds them into a classical neural network. This network then calculates the probability of the user’s chance of having Tonsillitis. The emphasis when evaluating the model is to minimize the chance that a user has Tonsillitis but is not recognized by the model (recall measure). In this setting, the neural network is deployed on the user’s device and therefore, we have to use a CNN that requires less storage but is less accurate. Furthermore, the CNN can no longer be updated regularly using the newest pictures but requires an app update in the app store.",
+      "textFull": "text full",
+      "references": [{
+        "link": "https://www.deeplearningbook.org/",
+        "name": "Deep Learning"
+      }],
+      "highlightLaw": [],
+      "highlightIT": [],
+      "highlightEconomy": [],
+      "highlightApp": []
+    }
+  ],
+  "references": []
+}

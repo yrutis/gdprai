@@ -4,7 +4,7 @@
     {
       "id": 1,
       "title": "What is the user’s data?",
-      "textCondensed": "In this setting, the user has to register in order to use the app. The minimal data we collect in this scenario is the email, username and password. Depending on the business model we might also collect information such as the social security number, address, phone number etc. The latter business model allows us to map a user to a real person. Therefore, we also partly know a real person’s medical history. Furthermore, we store the user’s image, the predicted probability of the disease and if the user decides to share the practitioner’s evaluation with us, we also retrieve the latter.",
+      "textCondensed": "In this setting, the user does not need to register in order to use the app. Since we still need to identify our users in order to comply with the GDPR granted rights, we generate a random ID based on a device fingerprint and 256-AES encryption. Furthermore, we store the user’s image, the predicted probability of the disease and if the user decides to share the practitioner’s evaluation with us, we also retrieve the latter.",
       "textFull": "text full",
       "references": [
         {
@@ -20,7 +20,7 @@
     {
       "id": 2,
       "title": "Encryption",
-      "textCondensed": "The goal is to design an end-to-end system that guarantees safety during transfer and safety during storage of the user’s data. In order to achieve a high level of security, we will use the newest encryption standards. Encryption transforms data to text that is unreadable by anyone who does not have a decryption key and hence turns the personal data into pseudonymised data. So even if our company encounters a data breach during file transfer or storage, the data obtained by an attacker will be nonsense. So when the user uploads the image for analysis, we transfer the image and user’s ID using a secure socket layer (SSL) protocol which encrypts the data during transfer. To enforce maximum security, we will use server-side encryption to safe the user’s personal data and image on our server and ensure encryption during storage.",
+      "textCondensed": "The goal is to design an end-to-end system that guarantees safety during transfer and safety during storage of the user’s data. In order to achieve a high level of security, we will use the newest encryption standards. Encryption transforms data to text that is unreadable by anyone who does not have a decryption key and hence turns the personal data into pseudonymised data. So even if our company encounters a data breach during file transfer or storage, the data obtained by an attacker will be nonsense. So when the user uploads the image for analysis, we transfer the image and user’s ID using a secure socket layer (SSL) protocol which encrypts the data during transfer. To enforce maximum security, we will use server-side encryption to safe the user’s ID and image on our server and ensure encryption during storage. In this setting, the data can be sold. If the data is sold we decrypt the data and encrypt it with a new key that we share with the buyer. The data is then transferred to the other company.",
       "textFull": "text full",
       "references": [
         {
@@ -40,7 +40,7 @@
     {
       "id": 3,
       "title": "Authentication and Authorization",
-      "textCondensed": "To comply with the GDPR, we will control the data stored on our server. In this setting, the user authenticates with his email and password as well as a second security factor (e.g. SMS-Token). We use access control lists (ACL) to restrict access to the users’ data and images stored on our server. ACLs allow us to grant permission such that each user can request to update, retrieve or delete his/her image with a REST request. Hence users are only able to retrieve, update or delete their own taken images. If the data is sold while the user did not withdraw his/her consent yet, we are not responsible for the other company’s usage of his/her data.",
+      "textCondensed": "To comply with the GDPR, we will control the data stored on our server. In this setting, the user authenticates using the encrypted ID generated when the user transfers an image. We use access control lists (ACL) to restrict access to the IDs and images stored on our server. ACLs allow us to grant permission such that each user can request to update, retrieve or delete his/her image with a REST request. Hence users are only able to retrieve, update or delete their own taken images. If the data is sold while the user did not withdraw his/her consent yet, we are not responsible for the other company’s usage of his/her data.",
       "textFull": "text full",
       "references": [
         {

@@ -40,7 +40,7 @@
     {
       "id": 3,
       "title": "Authentication and Authorization",
-      "textCondensed": "To comply with the GDPR, we will control the data stored on our server. In this setting, the user authenticates with his email and password as well as a second security factor (e.g. SMS-Token). We use access control lists (ACL) to restrict access to the users’ data and images stored on our server. ACLs allow us to grant permission such that each user can request to update, retrieve or delete his/her image with a REST request. Hence users are only able to retrieve, update or delete their own taken images. If the data is sold while the user did not withdraw his/her consent yet, we are not responsible for the other company’s usage of his/her data.",
+      "textCondensed": "To comply with the GDPR, we will control the data stored on our server. In this setting, the user authenticates with his email and password as well as a second security factor (e.g. SMS-Token). We use access control lists (ACL) to restrict access to the users’ data and images stored on our server. ACLs allow us to grant permission such that each user can request to update, retrieve or delete his/her image with a REST request. Hence users are only able to retrieve, update or delete their own taken images. If the data is sold while the user did not withdraw his/her consent yet, we are not responsible for the other company’s usage of his/her data. Furthermore, only our company has access to the users’ data: Any request from other companies on our users’ data will be rejected.",
       "textFull": "text full",
       "references": [
         {
@@ -56,7 +56,7 @@
     {
       "id": 4,
       "title": "Where is my data stored?",
-      "textCondensed": "To further comply with the GDPR, our server is located in Switzerland and therefore the encrypted data is stored in Switzerland. If the data is sold, we are not responsible where the data of the other company is located.",
+      "textCondensed": "To further comply with the GDPR, our server is located in Switzerland and therefore any data will never leave the country.",
       "textFull": "text full",
       "references": [],
       "highlightLaw": [],
