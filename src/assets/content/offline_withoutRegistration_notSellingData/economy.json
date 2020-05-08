@@ -9,7 +9,7 @@
       "references": [
       ],
       "highlightLaw": [1],
-      "highlightIT": [2],
+      "highlightIT": [1],
       "highlightEconomy": [1],
       "highlightApp": []
     },
@@ -20,10 +20,10 @@
       "textFull": "text full",
       "references": [
       ],
-      "highlightLaw": [1],
+      "highlightLaw": [],
       "highlightIT": [],
-      "highlightEconomy": [1],
-      "highlightApp": [1]
+      "highlightEconomy": [],
+      "highlightApp": []
     },
     {
       "id": 3,
@@ -32,10 +32,10 @@
       "textFull": "text full",
       "references": [
       ],
-      "highlightLaw": [1],
+      "highlightLaw": [],
       "highlightIT": [],
-      "highlightEconomy": [1],
-      "highlightApp": [1]
+      "highlightEconomy": [],
+      "highlightApp": []
     },
     {
       "id": 4,
@@ -44,10 +44,10 @@
       "textFull": "text full",
       "references": [
       ],
-      "highlightLaw": [1],
+      "highlightLaw": [],
       "highlightIT": [],
-      "highlightEconomy": [1],
-      "highlightApp": [1]
+      "highlightEconomy": [],
+      "highlightApp": []
     },
     {
       "id": 5,
@@ -56,10 +56,10 @@
       "textFull": "text full",
       "references": [
       ],
-      "highlightLaw": [1],
+      "highlightLaw": [],
       "highlightIT": [],
-      "highlightEconomy": [1],
-      "highlightApp": [1]
+      "highlightEconomy": [],
+      "highlightApp": []
     }
   ,
     {
@@ -69,10 +69,10 @@
       "textFull": "text full",
       "references": [
       ],
-      "highlightLaw": [1],
+      "highlightLaw": [],
       "highlightIT": [],
-      "highlightEconomy": [1],
-      "highlightApp": [1]
+      "highlightEconomy": [],
+      "highlightApp": []
     }
   ],
   "references": [
