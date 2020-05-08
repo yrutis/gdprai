@@ -8,9 +8,9 @@
       "textFull": "text full",
       "references": [
       ],
-      "highlightLaw": [],
-      "highlightIT": [],
-      "highlightEconomy": [],
+      "highlightLaw": [1],
+      "highlightIT": [1],
+      "highlightEconomy": [1],
       "highlightApp": []
     },
     {
@@ -32,8 +32,8 @@
       "textFull": "text full",
       "references": [
       ],
-      "highlightLaw": [],
-      "highlightIT": [],
+      "highlightLaw": [3],
+      "highlightIT": [2, 4],
       "highlightEconomy": [],
       "highlightApp": []
     },
@@ -44,9 +44,9 @@
       "textFull": "text full",
       "references": [
       ],
-      "highlightLaw": [],
+      "highlightLaw": [4],
       "highlightIT": [],
-      "highlightEconomy": [],
+      "highlightEconomy": [2, 3],
       "highlightApp": []
     },
     {
@@ -56,9 +56,9 @@
       "textFull": "text full",
       "references": [
       ],
-      "highlightLaw": [],
-      "highlightIT": [],
-      "highlightEconomy": [],
+      "highlightLaw": [5],
+      "highlightIT": [3],
+      "highlightEconomy": [4,5],
       "highlightApp": []
     }
   ],

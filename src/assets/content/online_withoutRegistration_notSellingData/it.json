@@ -12,9 +12,9 @@
           "name": "The Design of Rijndael: AES - The Advanced Encryption Standard"
         }
       ],
-      "highlightLaw": [],
-      "highlightIT": [],
-      "highlightEconomy": [],
+      "highlightLaw": [1],
+      "highlightIT": [1],
+      "highlightEconomy": [1],
       "highlightApp": []
     },
     {
@@ -32,9 +32,9 @@
           "name": "SSL"
         }
       ],
-      "highlightLaw": [1],
+      "highlightLaw": [3],
       "highlightIT": [2],
-      "highlightEconomy": [1],
+      "highlightEconomy": [],
       "highlightApp": []
     },
     {
@@ -48,9 +48,9 @@
           "name": "ACL"
         }
       ],
-      "highlightLaw": [],
-      "highlightIT": [],
-      "highlightEconomy": [],
+      "highlightLaw": [5],
+      "highlightIT": [3],
+      "highlightEconomy": [4,5],
       "highlightApp": []
     },
     {
@@ -59,8 +59,8 @@
       "textCondensed": "To further comply with the GDPR, our server is located in Switzerland and therefore any data will never leave the country.",
       "textFull": "text full",
       "references": [],
-      "highlightLaw": [],
-      "highlightIT": [],
+      "highlightLaw": [3],
+      "highlightIT": [4],
       "highlightEconomy": [],
       "highlightApp": []
     },
