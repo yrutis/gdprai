@@ -77,12 +77,24 @@
   ],
   "references": [
     {
-      "link": "http://google.ch",
-      "name": "Link1"
+      "link": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1017.7187&rep=rep1&type=pdf",
+      "name": "Acquisti 2010"
     },
     {
-      "link": "http://google.ch",
-      "name": "Link2"
+      "link": "https://www.sciencedirect.com/science/article/pii/S0047272719300131",
+      "name": "Choi et al. 2019"
+    },
+    {
+      "link": "https://www.jstor.org/stable/pdf/23015787.pdf?refreqid=excelsior%3Ad0b7395ff7fd835c563e4bbb8f148842",
+      "name": "Malhotra et al. 2004"
+    },
+    {
+      "link": "https://link.springer.com/content/pdf/10.1007%2F3-540-45017-3_46.pdf",
+      "name": "Spiekermann et al. 2003"
+    },
+    {
+      "link": "https://www.jstor.org/stable/pdf/23015560.pdf?refreqid=excelsior%3Aba9bb5dcd72d3da94f2f41fd9bf81aa7",
+      "name": "Tsai et al. 2011"
     }
   ]
 }

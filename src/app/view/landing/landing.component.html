@@ -21,21 +21,56 @@
     </div>
     <div class="col-12">
       <p class="text-justify">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        Driven by technological advances in the medical field, the world has seen exploding health care costs. A first
+        step towards a more efficient healthcare system is to reduce unnecessary visits at the doctor’s. Advances in
+        Artificial Intelligence allow us to detect possible diseases just using an app. This reduces the amount of
+        healthy people unnecessarily visiting doctors and hence lowers the stress on the health care system. Artificial
+        Intelligence requires a vast amount of healthcare data which is protected by different laws and regulations,
+        such as the GDPR. To get a better overview of how such an app could be implemented, we developed a website which
+        allows the user to explore different configurations of the app. In every configuration, the implications on data
+        privacy law, economics and IT are shown. Especially, we highlight how these areas are interconnected.
+        Additionally, we created an animation for each configuration that visually explains what happens to the user’s
+        data.</p>
+      <p class="text-justify">This website aims to give the visitors a clear and understandable overview of different
+        implications and questions raised by the creation of a health related mobile application complying with the
+        standards of the European legislation on data protection.</p>
 
-        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      <p class="text-justify">Legal, technological and economic aspects in relation with the creation of such an
+        application will be discussed:
+      </p>
+      <ul>
+        <li> In the legal section of the website, you will get an insight of what the General Data Protection Regulation
+          (GDPR) is, which rights the application’s users have regarding their data, which legal obligations the company
+          exploiting the application has to abide by in relation to data protection, as well as a discussion of the
+          legal implications represented by different possible functioning models for the application.
+        </li>
+        <li>In the technological section of the website, you will find how different configurations of an app require
+          different deployment methods and different security aspects like encryption or access rights. Further we show
+          what aspects in building an AI model need to be considered when choosing a deployment method.
+        </li>
+        <li> In the economic section of this website, you will find advantages and disadvantages for the company, the
+          users and society overall in each model. With regard to the company, aspects such as the use of data to
+          improve services or the potentially highly profitable sale of data are discussed. For consumers, the focus is
+          on the trade-off in data protection. And for society overall, further external effects associated with the
+          collection and distribution of data are presented.
+        </li>
+      </ul>
+      <p class="text-right"><em>Louise Cabot, Noah Chavannes, Martina Freund, Yves Rutishauser, Charlene Zellweger</em>
+      </p>
 
-        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
 
-        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer </p>
-      <p>You can change settings.. highlighted means paragraphes are linked.. </p>
-      <p class="text-right"><em>Louise Cabot, Noah Chavannes, Martina Freund, Yves Rutishauser, Charlene Zellweger</em></p>
+      <h4>Using the Website</h4>
+      <p class="text-justify">
+        In the top right corner you can change the settings by clicking on this icon <fa-icon [icon]="['fas','cog']" class="ml-1"></fa-icon> . There you can choose between different deployment models and business strategies. You will find three sections on the website, each discussing another aspect of the app. If you hover over a paragraph, related paragraphs in the other sections are highlighted. Furthermore, the dataflow of each configuration is shown in a animation.
+      </p>
     </div>
     <div class="col-12">
       <p>If you are interested in the paper, this app is based on, you can download it here.</p>
-      <a href="assets/download/GANILLA.pdf" class="download-link" target="_blank"><fa-icon [icon]="['fas','file-pdf']" class="pointer mr-2"></fa-icon> Download</a>
+      <a href="assets/download/GANILLA.pdf" class="download-link" target="_blank">
+        <fa-icon [icon]="['fas','file-pdf']" class="pointer mr-2"></fa-icon>
+        Download</a>
     </div>
-    <div class="col-12 mt-3 text-center">
+    <div class="col-12 mt-3 text-center mb-3">
       <button mat-flat-button color="primary" class="start-button rounded-0" [routerLink]="['app']">Start</button>
     </div>
   </div>
