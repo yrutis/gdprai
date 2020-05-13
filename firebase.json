@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/gdpr-ai-app",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

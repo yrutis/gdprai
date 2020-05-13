@@ -5,6 +5,8 @@ import {Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
 import {Title} from '@angular/platform-browser';
 import {HighlightService} from '../../service/highlight.service';
+import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
+import {LegalBasisComponent} from "../legal-basis/legal-basis.component";
 
 @Component({
   selector: 'app-aspects',
@@ -35,7 +37,7 @@ export class AspectsComponent implements OnInit, OnDestroy, OnChanges {
   page: Page;
   private componentDestroyed$ = new Subject<void>();
 
-  constructor(private stateService: StateService, private highlightService: HighlightService) {
+  constructor(private stateService: StateService, private highlightService: HighlightService, private modalService: NgbModal) {
   }
 
 
@@ -90,5 +92,9 @@ export class AspectsComponent implements OnInit, OnDestroy, OnChanges {
     this.highlightService.highlightInIt([]);
     this.highlightService.highlightInEconomy([]);
     this.highlightService.highlightInApp([]);
+  }
+
+  legalBasis(){
+    const modalRef = this.modalService.open(LegalBasisComponent, {windowClass: 'legal-modal', size: 'xl'});
   }
 }

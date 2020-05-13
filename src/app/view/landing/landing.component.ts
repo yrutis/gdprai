@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
+  privacyShow = false;
   constructor() { }
 
   ngOnInit(): void {

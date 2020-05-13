@@ -4,7 +4,7 @@
     {
       "id": 1,
       "title": "Introduction to Business Model",
-      "textCondensed": "In this scenario, the firm will neither collect data for own purposes nor for selling them to third parties. This prevents the company from making money and increasing efficiency by using data. On the other hand, the company saves money in ensuring compliance with GDPR regulations. In addition, users are more willing to use the app because they know that no data is collected or processed. This could even allow the company to charge consumers a one-time download fee.",
+      "textCondensed": "In this scenario, our firm will neither collect data for own purposes nor for selling them to third parties. This prevents the company from making money and increasing efficiency by using data. On the other hand, the company saves money in ensuring compliance with GDPR regulations. In addition, users are more willing to use the app because they know that no data is collected or processed. This could even allow our company to charge consumers a one-time download fee.",
       "textFull": "text full",
       "references": [
       ],
@@ -16,7 +16,7 @@
     {
       "id": 2,
       "title": "Advantages from the Firm's Perspective",
-      "textCondensed": "For the firm, the following advantages arise from this model. Since no data is collected, the firm does not need to protect them against data breaches and hacker attacks. In connection with this or the misuse of data, there is no risk that the company will be subject to liability or legal fees, reputational or stockmarket losses related to any aspect of the data. Further, there are no cost of collecting and storing data. As far as users are concerned, it is much easier for the company to establish consumer loyalty, while no user is deterred due to data protection concerns. As no data are sold, competitors cannot benefit from the knowledge gained from them either.",
+      "textCondensed": "For our firm, the following advantages arise from this model. Since no data is collected, the firm does not need to protect them against data breaches and hacker attacks. In connection with this or the misuse of data, there is no risk that our company will be subject to liability or legal fees, reputational or stockmarket losses related to any aspect of the data. Further, there are no cost of collecting and storing data. As far as users are concerned, it is much easier for our company to establish consumer loyalty, while no user is deterred due to data protection concerns. As no data are sold, competitors cannot benefit from the knowledge gained from them either.",
       "textFull": "text full",
       "references": [
       ],
@@ -28,7 +28,7 @@
     {
       "id": 3,
       "title": "Disadvantages from the Firm's Perspective",
-      "textCondensed": "For the firm, the following disadvantages arise from this model. Firstly, the data cannot be used for internal purposes like for improving services or marketing capabilities, train the AI model or applying methods of price or service discrimination. Furthermore, users' switching costs to other apps cannot be increased by personalising the content presented. In addition, data cannot be used for external purposes like selling or renting data, working together with third parties to place the targeted advertisement. All these aspects lead to competitive disadvantages compared to companies that collect and use data.",
+      "textCondensed": "For our firm, the following disadvantages arise from this model. Firstly, the data cannot be used for internal purposes like for improving services or marketing capabilities, train the AI model or applying methods of price or service discrimination. Furthermore, users' switching costs to other apps cannot be increased by personalising the content presented. In addition, data cannot be used for external purposes like selling or renting data, working together with third parties to place the targeted advertisement. All these aspects lead to competitive disadvantages compared to companies that collect and use data.",
       "textFull": "text full",
       "references": [
       ],
@@ -78,23 +78,23 @@
   "references": [
     {
       "link": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1017.7187&rep=rep1&type=pdf",
-      "name": "Acquisti 2010"
+      "name": "Economics of Personal Data and Privacy"
     },
     {
       "link": "https://www.sciencedirect.com/science/article/pii/S0047272719300131",
-      "name": "Choi et al. 2019"
+      "name": "Information Externalities"
     },
     {
       "link": "https://www.jstor.org/stable/pdf/23015787.pdf?refreqid=excelsior%3Ad0b7395ff7fd835c563e4bbb8f148842",
-      "name": "Malhotra et al. 2004"
+      "name": "Internet Users' Information Privacy Concerns (IUIPC)"
     },
     {
       "link": "https://link.springer.com/content/pdf/10.1007%2F3-540-45017-3_46.pdf",
-      "name": "Spiekermann et al. 2003"
+      "name": "Data Exchange: Industry vs. Consumer"
     },
     {
       "link": "https://www.jstor.org/stable/pdf/23015560.pdf?refreqid=excelsior%3Aba9bb5dcd72d3da94f2f41fd9bf81aa7",
-      "name": "Tsai et al. 2011"
+      "name": "Effect of Online Privacy Information on Online Purchasing Behavior"
     }
   ]
 }

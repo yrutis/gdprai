@@ -7,8 +7,24 @@
     <div class="col-12 m-0 p-0">
       <mat-accordion displayMode="flat">
         <mat-expansion-panel
+          *ngIf="type === 'law'"
+          [expanded]="true"
+          class="no-padding-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <strong>Legal Basis</strong>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p class="description-text">
+            The legal basis covers relevant topics that are relevant for any combination of settings. You only need to read them once.
+            You can find the legal basis here.
+
+          </p>
+          <button mat-flat-button color="primary" class="rounded-0" (click)="legalBasis()">Show legal basis</button>
+        </mat-expansion-panel>
+        <mat-expansion-panel
           *ngFor="let p of page.paragraphs; let i = index"
-          [expanded]="i == 0"
+          [expanded]="i == 0 && type !== 'law'"
           (mouseenter)="highlight(p)"
           (mouseleave)="unhighlight()"
           [class.highlight]="highlightIds.includes(p.id)"

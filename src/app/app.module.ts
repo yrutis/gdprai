@@ -23,6 +23,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {ClickStopPropagationDirective} from './view/clickStopPropagation';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { LandingComponent } from './view/landing/landing.component';
+import { LegalBasisComponent } from './view/legal-basis/legal-basis.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { LandingComponent } from './view/landing/landing.component';
     AspectsComponent,
     AnimationsComponent,
     ClickStopPropagationDirective,
-    LandingComponent
+    LandingComponent,
+    LegalBasisComponent
   ],
   imports: [
     BrowserModule,
@@ -66,6 +68,7 @@ import { LandingComponent } from './view/landing/landing.component';
     MatExpansionModule
   ],
   providers: [],
+  entryComponents: [LegalBasisComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

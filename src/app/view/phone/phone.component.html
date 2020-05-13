@@ -79,7 +79,7 @@
           <h6>Validate Result</h6>
         </div>
         <div class="col-12">
-          Please scan the QR-Code provided by your doctor <fa-icon [icon]="['fas','info-circle']" class="ml-2 pointer" ngbTooltip="Hint: The doctor presents a QR code according to his evaluation. There is a QR code for 'user has disease' and 'user does not have the disease'"></fa-icon>
+          Please scan the QR-Code provided by your doctor <fa-icon [icon]="['fas','info-circle']" class="ml-2 pointer" ngbTooltip="Hint: The doctor presents a QR code according to his evaluation. There is a QR code for 'user has disease' and 'user does not have the disease'. This is valuable information for us, as this allows us to label newly collected data and therefore improve the dataset that is used in training. Hence, this also improves the quality of the prediction."></fa-icon>
         </div>
       </div>
       <div class="row mt-3">
@@ -93,7 +93,7 @@
           <img src="assets/images/qrcode.png" />
         </div>
         <div class="col-12 mt-3 img-wrapper" *ngIf="qrScanned">
-          <fa-icon [icon]="['fas','check']" class="mr-2"></fa-icon> You have scanned the qr code successfully!
+          <fa-icon [icon]="['fas','check']" class="mr-2"></fa-icon> You have scanned the QR-Code successfully!
         </div>
       </div>
 
@@ -130,7 +130,7 @@
             <h6>Your Image</h6>
           </div>
           <div class="col-5" *ngIf="imageUploaded">
-            <img src="assets/images/disease.png" class="disease-img"/>
+            <img src="assets/images/disease.jpg" class="disease-img"/>
           </div>
           <div class="col-7" *ngIf="imageUploaded">
             <p>
@@ -171,7 +171,7 @@
           </div>
           <div class="col-12">
             <mat-checkbox checked><span class="agb-checkbox">Accept <span appClickStopPropagation class="agb-link"
-                                                                          (click)="displayAgb = true">Privacy Policy and Terms and Conditions</span></span>
+                                                                          (click)="displayAgb = true">Privacy Policy</span></span>
             </mat-checkbox>
           </div>
           <div class="col-12" *ngIf="displayAgb">

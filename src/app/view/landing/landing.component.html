@@ -73,5 +73,11 @@
     <div class="col-12 mt-3 text-center mb-3">
       <button mat-flat-button color="primary" class="start-button rounded-0" [routerLink]="['app']">Start</button>
     </div>
+    <div class="col-12 my-4 text-center">
+      <a (click)="privacyShow = !privacyShow" class="pointer">Privacy Policy</a>
+    </div>
+    <div class="col-12 mb-4" *ngIf="privacyShow">
+      sadbjasjdb
+    </div>
   </div>
 </div>

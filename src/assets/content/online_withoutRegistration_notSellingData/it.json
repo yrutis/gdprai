@@ -40,12 +40,12 @@
     {
       "id": 3,
       "title": "Authentication and Authorization",
-      "textCondensed": "To comply with the GDPR, we will control the data stored on our server. In this setting, the user authenticates using the encrypted ID generated when the user transfers an image. We use access control lists (ACL) to restrict access to the IDs and images stored on our server. ACLs allow us to grant permission such that each user can request to update, retrieve or delete his/her image with a REST request. Hence users are only able to retrieve, update or delete their own taken images. Furthermore, only our company has access to the users’ data: Any request from other companies on our users’ data will be rejected.",
+      "textCondensed": "To comply with the GDPR, we will control the data stored on our server. In this setting, the user authenticates using the encrypted ID generated when the user transfers an image.We use OAuth2 protected endpoints to restrict access to the IDs and images stored on our server. OAuth2 allows us to grant permission such that each user can request to update, retrieve or delete his/her image with a REST request. Hence users are only able to retrieve, update or delete their own taken images. Furthermore, only our company has access to the users’ data: Any request from other companies on our users’ data will be rejected.",
       "textFull": "text full",
       "references": [
         {
-          "link": "https://en.wikipedia.org/wiki/Access-control_list",
-          "name": "ACL"
+          "link": "https://oauth.net/2/",
+          "name": "OAuth2"
         }
       ],
       "highlightLaw": [5],
