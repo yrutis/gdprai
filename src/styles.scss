@@ -218,3 +218,15 @@ h6 {
     display: block;
   }
 }
+
+.basis-panel .mat-expansion-panel-header {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 35px !important;
+}
+
+
+.basis-panel .mat-expansion-panel-body {
+  padding-left: 20px;
+  padding-right: 20px;
+}

@@ -7,7 +7,1008 @@
 <div class="modal-body">
   <div class="row">
     <div class="col-12">
-      <p>text</p>
+      <mat-accordion displayMode="flat">
+        <mat-expansion-panel
+          [expanded]="true"
+          class="basis-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <h4>Data protection and its importance</h4>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p class="text-justify mb-1">Data protection is the process of protecting data and thus the privacy of the
+            person. Data is
+            indispensable and is available at all the stages of the data processing: from its collection, use
+            and transfer, to its storage and erasure. Data protection shall safeguard data from
+            corruption, compromise, misuse or loss.</p>
+          <p class="text-justify mb-1">As more and more data is created, collected, processed, transferred and stored,
+            the
+            importance of data protection is constantly increasing.</p>
+          <p class="text-justify mb-1">
+            Personal data security is of major interest for individuals, as personal data ending in the
+            wrong hands can have severe consequences for the concerned individuals. Harmful
+            consequences can vary from becoming victim of criminal activities such as phishing scams,
+            identity theft, stolen banking information, to having private information used with harmful
+            intent without the concerned individual’s consent.
+          </p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <div class="col-12">
+      <mat-accordion displayMode="flat">
+        <mat-expansion-panel
+          class="basis-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <h4>The GDPR and European data protection regulations</h4>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p class="text-justify mb-1">The General Data Protection Regulation (GDPR) is the new European law on data
+            protection.
+            The GDPR entered into force on the 24 th of May 2016 and has been applicable as of the 25 th
+            of May 2018. Since then, companies and organizations are required to be compliant with
+            this regulation.</p>
+          <p class="text-justify mb-1">This regulation sets out data protection rules: it is designed to give
+            individuals more control
+            over their data, over how their data is collected, used and protected. It also obliges
+            organizations and companies to comply with strict new rules on how to use and secure the
+            personal data they collect. Ensuring transparency as well as providing individuals
+            information on how their data is being used are the goals of this new regulation.
+            Organizations and companies that fail to comply with these new rules face heavy penalties.</p>
+          <p class="text-justify mb-1">
+            The GDPR establishes a uniform framework for data protection legislation across the EU.
+            Instead of each member state having their own data protection laws, all member states are
+            now governed by a single regulation. This is of great advantage for organizations and
+            companies as they do not need to comply with 28 different data protection laws anymore, in
+            order to offer their services in all EU member states. If this is mainly true, member states
+            keep however the right to regulate some fields more extensively when allowed by the GDPR.
+            Hence slight regulatory differences between member states might remain.
+          </p>
+          <p class="text-justify mb-1">
+            In the context of this project, legal questions on data protection raised by the creation of a
+            health related app will only be discussed with regards to the GDPR. National regulations will
+            not be taken into account.
+          </p>
+          <p class="text-justify mb-1">
+            Concerning the material scope of the GDPR, the regulation applies to the processing of
+            personal data, when this data is entirely or partially processed by automated systems or
+            when it is processed with the intention to integrate this data in a filing system (art. 2 GDPR).
+            In the light of the above statement, if no personal data is processed (explanations on what
+            “personal data” and “process” mean will be given in the section “some definitions”), the
+            GDPR doesn’t apply. Furthermore, there are a few exceptions where the GDPR doesn’t apply
+            when personal data is processed (cf. art. 2(2) GDPR). One of these exceptions is the
+            processing of personal data in the context of purely personal or household activities.
+          </p>
+          <p class="text-justify mb-1">
+            Regarding the territorial scope of the GDPR, the regulation applies to any organization
+            established within the European Union, as well as to any other organization within or
+            outside the EU but that processes personal data of EU residents (art. 3 GDPR). This is the so-
+            called “extra-territorial effect” of the GDPR.
+          </p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <div class="col-12">
+      <mat-accordion displayMode="flat">
+        <mat-expansion-panel
+          class="basis-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <h4>Applicability of the GDPR to our Company</h4>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p class="text-justify mb-1">
+            As the health related mobile application discussed in this project should process personal
+            data of EU residents with an automated system, the GDPR applies to it. Hence, our company
+            has to make sure to comply with the GDPR rules if it does not want to face heavy penalties,
+            bad branding image and the loss of the users’ trust.
+          </p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <div class="col-12">
+      <mat-accordion displayMode="flat">
+        <mat-expansion-panel
+          class="basis-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <h4>Definitions</h4>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <mat-accordion displayMode="flat">
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>Personal data (Art. 4(1) GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">
+                Personal data is any information that relates to a living individual who can be directly or
+                indirectly identified.
+              </p>
+              <p class="text-justify mb-1">
+                This excludes information related to companies from the definition of personal data.
+                Therefore data concerning companies doesn’t fall within the scope of the GDPR.
+              </p>
+              <p class="text-justify mb-1">
+                For information to be considered personal data, the format isn’t relevant. Personal data can
+                be contained on video, audio, numerical, graphical, photographic supports etc.
+              </p>
+              <p class="text-justify mb-1">
+                Individuals are directly identifiable if you can identify them by exclusively using information
+                you already possess.
+              </p>
+              <p class="text-justify mb-1">
+                Individuals are indirectly identifiable if you can not identify them exclusively using
+                information you already possess, but who might be identified by using other information,
+                information you can reasonably get access to through external sources or third parties.
+              </p>
+              <p class="text-justify mb-1">
+                Personal data that has been pseudonymised or encrypted can be processed to re-identify
+                individuals. This kind of data remains personal data and therefore falls within the scope of
+                the GDPR.
+              </p>
+              <p class="text-justify mb-1">
+                Personal data that has been irreversibly anonymized is no longer considered personal data
+                and therefore doesn’t fall within the scope of the GDPR. However, companies must be very
+                careful in this context, as it is rare and extremely difficult to successfully anonimyze data
+                irreversibly.
+              </p>
+              <p class="text-justify mb-1">
+                Here is a non-exhaustive list of information possibly falling under the definition of personal
+                data: name, email address, location information, ethnicity, gender, biometric data, religious
+                beliefs, web cookies, and political opinions etc.
+              </p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>Personal data (Art. 4(1) GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">
+                Data concerning health is personal data related to the physical or mental health of a living
+                individual, including the provision of health care services, which reveal information about his
+                or her health status.
+              </p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>Sensitive (personal) data</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">
+                Sensitive data is a special category of personal data. To ensure a higher level of protection,
+                this category of data is subject to stricter rules than regular personal data.
+              </p>
+              <p class="text-justify mb-1">
+                Genetic and biometric data, as well as data on racial or ethnic origin, on political opinions, on
+                religious or philosophical beliefs, on trade union membership, concerning health, concerning
+                sex life or concerning sexual orientation are considered sensitive personal data.
+              </p>
+              <p class="text-justify mb-1">
+                They must be processed with extra security, as the loss or misuse of this category of data
+                would be particularly prejudicial for the concerned individuals and could involve severe and
+                unacceptable risks for fundamental human rights and freedoms.
+              </p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>Data subject</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">
+                The data subject is the (directly or indirectly) identifiable living individual the data is about
+                and whose data is processed.
+              </p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>Data processing (Art. 4(2) GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">
+                Any action performed on personal data is data processing. It can by manual or automated.
+                Collection, recording, organization, structuring, storage, adaptation or alteration, retrieval,
+                consultation, use, disclosure by transmission, dissemination or otherwise making available,
+                alignment or combination, restriction, erasure or destruction of data is data processing.
+              </p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>Data controller (Art. 4(7) GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">
+                The data controller is the individual or organization which decides if and how personal data
+                will be processed.
+              </p>
+              <p class="text-justify mb-1">
+                The data controller is the individual or organization which decides if and how personal data
+                will be processed.
+              </p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>Data processor (Art. 4(8) GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">
+                The data processor is a third party individual or organization which processes personal data
+                on behalf of the data controller.
+              </p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>Pseudonymisation (Art. 4(5) GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">
+                Pseudonymisation is the processing of personal data in such a way that the personal data
+                can no longer be attributed to a specific data subject without the use of additional
+                information. In addition, pseudonymisation requires for such additional information to be
+                kept separately and to be subject to technical and organizational measures to ensure that
+                the personal data is not attributed to an identified or identifiable individual.
+              </p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>Third party (Art. 4(10) GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">
+                A third party is any individual or organization other than the data subject, controller,
+                processor who, with the permission of the data controller or processor, is authorized to
+                process personal data.
+              </p>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <div class="col-12">
+      <mat-accordion displayMode="flat">
+        <mat-expansion-panel
+          class="basis-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <h4>Observed Principles when processing Your Data</h4>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p class="text-justify mb-1">Article 5 GDPR lists different principles to be observed by the data controller
+            (us, our
+            company) when processing personal data (your personal data). Here are those principles:</p>
+          <mat-accordion displayMode="flat">
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>LAWFULNESS, FAIRNESS AND TRANSPARENCY (Art. 5(1)(a) GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">The data controller must comply with the law. Data has to be collected and
+                processes under
+                valid grounds (“lawful reasons for data processing”) as per the GDPR. In addition, the data
+                processing must be fair and transparent to the data subject, in particular through the
+                establishment of a privacy policy. This means the data controller must not process the data
+                in a way that is unduly detrimental, unexpected or misleading to the data subject. The data
+                controller must be clear, open and honest with the data subject from the start about how
+                they will use collected data.</p>
+              <h6>Our Compliance</h6>
+              <p class="text-justify mb-1">To comply with this principle our company has identified a lawful basis
+                (consent) for the
+                processing of personal data and does not do anything unlawful with it. Our company uses a
+                privacy policy and does not deceive or mislead individuals when collecting their personal
+                data. Our company is transparent and honest and complies with the right to be informed.</p>
+
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>PURPOSE LIMITATION (Art. 5(1)(b) GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">The data controller must process data for the legitimate purposes specified
+                explicitly to the
+                data subject when the data was collected.</p>
+              <h6>Our Compliance</h6>
+              <p class="text-justify mb-1">Our company complies with this principle by clearly identifying the different
+                purposes for
+                our processing of personal data. Those purposes are documented and detailed in the app’s
+                privacy policy. If our company needs to use personal data for new purposes that are not
+                compatible with the ones mentioned in the policy at the time consent was given, our
+                company will ask for the user’s renewed consent before processing any additional personal
+                data in the context of the new purposes.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>DATA MINIMIZATION (Art. 5(1)(c) GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">The data controller should collect and process solely adequate and relevant
+                data, and only
+                as much of it as absolutely necessary for the specified purposes.</p>
+              <h6>Our Compliance</h6>
+              <p class="text-justify mb-1">To comply with this principle our company only collects personal data we
+                actually need for
+                the specified purposes. Our company periodically reviews the personal data it holds and
+                anything irrelevant is deleted from our database.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>ACCURACY (Art. 5(1)(d) GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">Accuracy of the collected personal data is part of the principles of data
+                protection. The data
+                controller must maintain personal data accurate and up to date. The data controller must
+                take reasonable measures to make sure the personal data he holds is not misleading or
+                incorrect. If the data controller does discover that pieces of personal data are incorrect, he
+                must correct or erase them.</p>
+              <h6>Our Compliance</h6>
+              <p class="text-justify mb-1">To comply with this principle our company ensures the accuracy of any
+                personal data we
+                process by having appropriate procedures in place. In this context, our company complies
+                with the individual’s right to rectification.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>STORAGE LIMITATION (Art. 5(1)(e) GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">Following the same logic as for the principle of data minimization, the data
+                controller should
+                store personal data only for as long as necessary for the specified purposes.</p>
+              <h6>Our Compliance</h6>
+              <p class="text-justify mb-1">To comply with this principle our company keeps record of which personal data
+                it holds and
+                why it remains important to keep it. Our company can justify why and how long personal
+                data is kept. In this context, our company ensures individuals’ right to request the erasure of
+                their data is respected.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>INTEGRITY AND CONFIDENTIALITY (Art. 5(1)(f) GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">The data controller must ensure appropriate security, integrity and
+                confidentiality of the
+                data processing.</p>
+              <h6>Our Compliance</h6>
+              <p class="text-justify mb-1">You will find more information on how our company complies with this
+                principle in the
+                “Security of Your Data” section.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>ACCOUNTABILITY (Art. 5(2) GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">The data controller must be able to demonstrate GDPR compliance with all of
+                these
+                principles. Not being able to demonstrate the company’s compliance with the GDPR
+                amounts to not complying with the regulation.</p>
+              <h6>Our Compliance</h6>
+              <p class="text-justify mb-1">Our company complies with this principle by keeping evidence of the steps
+                taken to abide by
+                the GDPR. It keeps documentation regarding its compliance available at any time to the app
+                users.</p>
+            </mat-expansion-panel>
+          </mat-accordion>
+          <p class="text-justify mb-1">Each of these principles is developed throughout the GDPR and concretized by
+            specific and
+            detailed articles of the regulation.</p>
+          <p class="text-justify mb-1">This was a short overview. In the next subsections you will find more on the
+            concretization
+            of those principles and on the specific rules our company has to abide by when processing
+            your personal data to make sure these principles are observed in the context of the
+            exploitation of our application.</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <div class="col-12">
+      <mat-accordion displayMode="flat">
+        <mat-expansion-panel
+          class="basis-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <h4>Your Rights over Your Data</h4>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p class="text-justify mb-1">The GDPR recognizes a series of new rights for individual’s whose personal data
+            is collected
+            and processed. This should enable them to have better control over their personal data,
+            even once their data is in the hands of a data controller. Here is a list of the data subjects’ rights
+            provided by the GDPR:</p>
+          <mat-accordion displayMode="flat">
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>THE RIGHT TO BE INFORMED (Art. 12 GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">Data subjects have the right to be informed about the collection and the
+                processing of their
+                data. Data subject have the right to be provided by the data controller with information such
+                as: the type of personal data collected, the purpose of the processing, the way their data is
+                collected, processed, stored and disclosed. Data subject have the right to concise,
+                transparent, intelligible and easily accessible information on their data.</p>
+              <h6>Our Compliance</h6>
+              <p class="text-justify mb-1">Our company informs users on these different matters through its privacy
+                policy and is
+                contactable in case of any questions.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>THE RIGHT OF ACCESS (Art. 15 GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">Data subjects have the right to access personal data the data controller
+                holds about them,
+                free of charge (as long as the request is reasonable). The data subject should get a response
+                within a month.</p>
+              <h6>Our Compliance</h6>
+              <p class="text-justify mb-1">Our company will endeavour to respond to any user’s request within a
+                month.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>THE RIGHT TO RECTIFICATION (Art. 16 GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">Data subjects have to right to have their inaccurate personal data rectified
+                or completed.
+                The rectification should be done within one month after their request.</p>
+              <h6>Our Compliance</h6>
+              <p class="text-justify mb-1">Our company will respond to any user’s request within a month.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>THE RIGHT TO ERASURE (Art. 17 GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">Data subjects have the right to have their personal data erased. This right
+                is also known as
+                the right to be forgotten. The data should be erased within one month after the their
+                request. However this right is not absolute. It only applies under certain circumstances.</p>
+              <h6>Our Compliance</h6>
+              <p class="text-justify mb-1">Our company will respond to users’ legitimate requests within a month.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>THE RIGHT TO RESTRICT PROCESSING (Art. 18 GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">Data subjects have the right to require restrictions on the processing of
+                their personal. If the
+                processing is restricted, the data controller can store the data, but is not allowed to use it.
+                The processing restriction should be implemented within one month after the request.
+                However the right to restrict processing is not absolute. It only applies under certain
+                circumstances.</p>
+              <h6>Our Compliance</h6>
+              <p class="text-justify mb-1">Our company will respond to users’ legitimate requests within a month.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>THE RIGHT TO DATA PORTABILITY (Art. 20 GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">Data subject have the right to transfer their personal data from one data
+                controller to
+                another, and hence obtain and reuse their personal data in their own interest with another
+                service provider. They should be able to copy and transfer personal data easily, safely and
+                securely, with no alteration of its usability from one data controller to another.</p>
+              <h6>Our Compliance</h6>
+              <p class="text-justify mb-1">When requested by users, our company will make sure to provide them with a
+                support
+                containing their full data and easy to reuse.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>THE RIGHT TO OBJECT (Art. 21 GDPR)</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">Data subjects have the right to object to the processing of their personal
+                data. This isn’t an
+                absolute right and depends on the circumstances. The data controller might keep processing
+                the data if he has a compelling reason to do so. However data subjects have an absolute
+                right to require the cessation of the use of their personal data for direct marketing. A
+                response to the objection should be given to the data subject within one month after its
+                request.</p>
+              <h6>Our Compliance</h6>
+              <p class="text-justify mb-1">Our company will respond to users’ legitimate requests within a month.</p>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <div class="col-12">
+      <mat-accordion displayMode="flat">
+        <mat-expansion-panel
+          class="basis-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <h4>Categories of Data we process</h4>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p class="text-justify mb-1">In the context of the exploitation of our application two types of data will be
+            collected and
+            processed (it will however vary from one functioning app model to another, with app models
+            collecting and processing less data than this):</p>
+          <ul>
+            <li>Personal data (Art. 4(1) GDPR) and</li>
+            <li>Sensitive personal data.</li>
+          </ul>
+          <p class="text-justify mb-1">As defined in the “Definitions” section.</p>
+          <p class="text-justify mb-1">In fact, we will be collecting names, email addresses, and other information
+            users give us by
+            registering (personal data) as well as personal data concerning the health of the app users
+            (sensitive personal data), such as pictures of their throat in the very example of our app
+            predicting the presence of tonsillitis.</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <div class="col-12">
+      <mat-accordion displayMode="flat">
+        <mat-expansion-panel
+          class="basis-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <h4>Lawfulness of data processing and consent</h4>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-accordion displayMode="flat">
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>Lawfulness of personal data processing</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">In accordance with Article 6 GDPR the processing of personal data is only
+                lawful under
+                certain circumstances. If one of the following requirements is met, the concerned personal
+                data processing is lawful:</p>
+              <ol type="a">
+                <li>The data subject has given consent to the processing of his or her personal data for one
+                  or more specific purposes
+                </li>
+                <li>The processing of personal data is necessary to perform a contract to which the data
+                  subject is party or in order to take steps at the request of the data subject prior to
+                  entering into a contract.
+                </li>
+                <li>The processing of personal data is necessary to comply with legal obligations from Union
+                  law or Member State law to which the data controller is subject (Art. 6(3) GDPR).
+                </li>
+                <li>The processing of personal data is necessary in order to protect the vital interests of the
+                  data subject or of another natural person
+                </li>
+                <li>The processing of personal data is necessary to perform a task in the public interest or in
+                  the exercise of official authority (in cases where the data controller has this authority).
+                </li>
+                <li>The processing of personal data is necessary for the purposes of the legitimate interests
+                  pursued by the data controller or by a third party, except where such interests are
+                  overridden by the interests or fundamental rights and freedoms of the data subject.
+                </li>
+              </ol>
+              <h6>Our Compliance</h6>
+              <p class="text-justify mb-1">In the context of the operation of our app and the resultant data processing,
+                the most
+                relevant lawful reasons for personal data processing would probably be: consent of the data
+                subject, performance of a binding contract with the data subject and compliance with legal
+                obligations. Other lawful reasons for data processing could be possible in our case, but
+                would be less likely to occur. As long as our company legitimately relies on one of the
+                mentioned reasons every time it processes data, then our personal data processing is lawful.</p>
+              <p class="text-justify mb-1">For our company to rely on the consent of the data subject or the existence
+                of a contract
+                requesting data processing for its performance, we will need to get that consent from our
+                users or to have a contractual relation with them, probably based on a service agreement.
+                As obtaining our users’ consent is the safest option in our opinion, this is probably what our
+                company will go for.</p>
+              <p class="text-justify mb-1">Under the GDPR the process of obtaining consent is subject to specific rules,
+                which will be
+                discussed at the end of this section.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>Lawfulness of personal data processing</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">As the processing of sensitive personal data requires a higher level of
+                protection than the
+                processing of personal data due to the inherent risk of this processing, special rules apply.
+                According to Article 9 GDPR processing sensitive personal data is basically forbidden.
+                However, there are exceptions and the prohibition can be lifted if one of the requirements
+                listed in Article 9(2) GDPR is met.</p>
+              <p class="text-justify mb-1">Hence, for the lawful processing of sensitive personal data, the data
+                controller is required to
+                have a valid exception motif based on Article 9 GDPR, in addition to a lawful reason to
+                process personal data based on Article 6 GDPR.</p>
+              <h6>Our Compliance</h6>
+              <p class="text-justify mb-1">We will not mention all the possible exemption cases from Article 9(2) GDPR
+                as there are
+                many and only one of them would apply in the case of our app: again, it will be obtaining
+                consent from our users for the processing of their personal data, and in this case for the
+                processing of their sensitive personal data.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>Obtaining consent under the GPPR</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">The GDPR sets a high standard for the obtention of consent. The conditions
+                for consent are
+                defined in Article 7 GDPR. Additionally, Article 8 GDPR defines the applicable conditions for
+                obtaining a child’s consent.</p>
+              <p class="text-justify mb-1">Consent must be freely given, specific, informed and unambiguous.</p>
+              <p class="text-justify mb-1">“Freely given” consent essentially means that the data controllers should not
+                corner the
+                data subject into agreeing to the processing of their data. Hence, the obtention of the
+                consent cannot be presented as a condition for using the company services. The data subject
+                must have genuine and free choice and must be able to refuse or withdraw consent without
+                detriment.</p>
+              <p class="text-justify mb-1">“Specific consent” means that the request for consent should be presented in
+                a way that
+                clearly distinguishes this question from other matters. The data controller must get separate
+                consent for each type of data processing operation. He must give the user an opportunity to
+                confirm or decline each type of use. If the data controller has more than one purpose to
+                conduct data processing, he must obtain consent for each different purpose.</p>
+              <p class="text-justify mb-1">“Informed consent” means the data subject knows the data processor’s
+                identity, which
+                personal data will be processed, the purpose of the data processing, and users must be
+                made aware of their right to withdraw their consent at any time. It also means that these
+                pieces of information have to be shared in an intelligible and easily accessible form, using
+                clear and plain language.</p>
+              <p class="text-justify mb-1">“Unambiguous consent” means it should be a certainty that the data subject
+                has consented.
+                The data controller must provide an opt-in system for the collection of the data subject’s
+                consent. Silence, pre-ticked boxes or inactivity does not constitute consent.</p>
+              <p class="text-justify mb-1">Consent can be revoke. Data subjects have the right to withdraw their consent
+                at any time.
+                The data controller must make the consent withdrawal process uncomplicated and easily
+                accessible.</p>
+              <p class="text-justify mb-1">In the context of the processing of sensitive personal data based on the data
+                subject’s
+                consent, the process to obtain consent is even more rigorous. Additional information from
+                the ones mentioned above might need to be provided and the data processor must explain
+                even more clearly how the data will be processed.</p>
+              <h6>Our Compliance</h6>
+              <p class="text-justify mb-1">Our company will comply with all these requirements through its privacy
+                policy. All provided
+                information will be clear and easily understandable by everyone. The app users will be able
+                to give their consent regarding the processing of their personal data, as well as over the
+                processing of their sensitive data. The users will opt-in if they consent, and will be able to do
+                so for each different processing activity on their data. Our company will inform them about
+                their right to withdrawal and will make sure to obtain from its users freely given, specific,
+                informed and unambiguous consent only.</p>
+              <p class="text-justify mb-1">Regarding children’s consent, our company will not collect or process any
+                data from
+                individuals under the age of 16. Therefore it doesn’t have to comply with any additional
+                rules.</p>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <div class="col-12">
+      <mat-accordion displayMode="flat">
+        <mat-expansion-panel
+          class="basis-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <h4>Protection and Storage of personal data: Security of personal data and compliance tools</h4>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p class="text-justify mb-1">The GDPR imposes many different legal obligations on the data controller in order
+            to make
+            sure personal data is well safeguarded. The regulation also imposes obligations to ensure the
+            right measures are taken in case of a data breach. The data processor has legal obligations as
+            well, but this doesn’t concern our company, as we don’t rely on processors. In accordance
+            with the accountability principle (cf. section “Observed Principle when processing Your
+            Data”), the data controller is responsible for complying with the Regulation and needs to
+            establish appropriate technical and organizational measures to ensure data protection.</p>
+          <p class="text-justify mb-1">Here is an overview of some of these legal tools and obligations, classified in
+            three different
+            categories: the tools and obligations to prevent any security issue, the tools and obligations
+            regarding the security methods themselves and the obligations in case of a data breach.</p>
+          <mat-accordion displayMode="flat">
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>Preventive security tools and obligations</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-accordion displayMode="flat">
+                <mat-expansion-panel
+                  class="basis-panel">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <h6>Data protection by design and by default (Art. 25 GDPR)</h6>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <p class="text-justify mb-1">Data protection by design means that the data controller needs to
+                    consider and take into
+                    account data protection and privacy issues in everything the company does, at the earliest
+                    stages of processing.</p>
+                  <p class="text-justify mb-1">Data protection by default means the data controller has to ensure he
+                    processes necessary
+                    personal data only to achieve the specified purpose (cf. principle of minimization in the
+                    section “Observed Principle when processing Your Data”). The data controller has to adopt a
+                    privacy-first approach. For example, the data controller should ensure that personal data is
+                    not automatically made public unless users decide to change the settings. By default the
+                    settings should protect the user privacy.</p>
+                  <h6>Our Compliance</h6>
+                  <p class="text-justify mb-1">Our company had a safety-first approach from the start while developing
+                    the app.
+                    Everything has been done so that the users’ personal data is well protected. The settings by
+                    default of the app are programmed to allow minimum data processing.</p>
+                </mat-expansion-panel>
+                <mat-expansion-panel
+                  class="basis-panel">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <h6>Data Protection impact assessment (Art. 35 GDPR)</h6>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <p class="text-justify mb-1">A Data Protection Impact Assessment (DPIA) is a process to help the data
+                    controller identify
+                    the risk inherent to his processing of personal data in the context of his company’s activities.
+                    Hence the goal of the DPIA is to minimize risks to the rights and freedoms of data subjects.
+                    The data controllers must do such an assessment when the data processing process is
+                    considered high risk for the users, as it is for instance the case when sensitive personal data
+                    is processed.</p>
+                  <h6>Our Compliance</h6>
+                  <p class="text-justify mb-1">As our company processes sensitive personal data on a large scale, a DPIA
+                    was conducted. It
+                    resulted positively, ensuring all appropriate measures are taken to protect personal data the
+                    company processes.</p>
+                </mat-expansion-panel>
+                <mat-expansion-panel
+                  class="basis-panel">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <h6>Prior consultation (Art. 36 GDPR)</h6>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <p class="text-justify mb-1">When the DPIA indicates that the processing of personal would be of high
+                    risk and further
+                    measures have not been taken, the data controller must consult the competent supervisory
+                    authority before beginning data processing. This authority can then, if necessary, provide
+                    advice to the company.</p>
+                  <h6>Our Compliance</h6>
+                  <p class="text-justify mb-1">This step has not been necessary for our company.</p>
+                </mat-expansion-panel>
+                <mat-expansion-panel
+                  class="basis-panel">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <h6>Data protection officer (Art 37-39 GDPR)</h6>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <p class="text-justify mb-1">The data controller has to designate a data protection officer among
+                    others when the main
+                    activities of the data controller consist on processing on a large scale special data, such as
+                    sensitive personal data. The data protection officer should be expert in data protection laws
+                    and practices. His tasks are to inform and advise the data controllers and the company’s
+                    employees about data protection requirements, to monitor the company’s GDPR
+                    compliance, to cooperate with the supervisory authority responsible for data protection, to
+                    act as contact point with the data protection authorities, etc.</p>
+                  <h6>Our Compliance</h6>
+                  <p class="text-justify mb-1">Our company has a data protection officer to monitor and control our
+                    compliance with the
+                    GDPR at all times.</p>
+                </mat-expansion-panel>
+                <mat-expansion-panel
+                  class="basis-panel">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <h6>Records of processing activities (Art. 30 GDPR)</h6>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <p class="text-justify mb-1">The data controller has to maintain a record of processing activities
+                    under its responsibility,
+                    referencing: the company’s name and contact details, the purpose of processing, a
+                    description of the processed data, the recipients to whom data has been or will be disclosed,
+                    transfers of data, the envisaged time limit for erasure, description of the data security
+                    measures, etc. This record must be made available to the supervisory authority.</p>
+                  <h6>Our Compliance</h6>
+                  <p class="text-justify mb-1">Keeping such a record is not mandatory for every company. As our company
+                    is processing
+                    sensitive personal data this obligation applies to us. Hence, our company keeps a record of
+                    our processing activities.</p>
+                </mat-expansion-panel>
+              </mat-accordion>
+            </mat-expansion-panel>
+          </mat-accordion>
+          <mat-accordion displayMode="flat">
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>Obligations regarding securing methods</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-accordion displayMode="flat">
+                <mat-expansion-panel
+                  class="basis-panel">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <h6>Security of processing (Art. 32 GDPR)</h6>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <p class="text-justify mb-1">Taking multiples factors into account (the costs of implementation, the
+                    context and
+                    purposes of processing, the probable risk presented by the processing for the rights and
+                    freedoms of the data subjects, etc.), the data controller must implement appropriate
+                    technical and organizational measures to ensure a level of security appropriate to the risk.
+                    Amongst others, Pseudonymisation and Encryption can be appropriate methods.</p>
+                  <h6>Our Compliance</h6>
+                  <p class="text-justify mb-1">Our company has organizational as well as technical appropriate measures
+                    to ensure the
+                    security of the users’ data. Our company uses pseudonymisation as well as encryption
+                    methods to achieve that.</p>
+                </mat-expansion-panel>
+              </mat-accordion>
+            </mat-expansion-panel>
+          </mat-accordion>
+          <mat-accordion displayMode="flat">
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>Obligation in case of a data breach</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-accordion displayMode="flat">
+                <mat-expansion-panel
+                  class="basis-panel">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <h6>Notification of a personal data breach to the supervisory authority (Art. 33 GDPR)</h6>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <p class="text-justify mb-1">In the case of a personal data breach, the data controller must notify it
+                    to the competent
+                    supervisory authority without undue delay and not later than 72 hours after having become
+                    aware of it (when feasible). This aims at minimizing adverse effects.</p>
+                  <h6>Our Compliance</h6>
+                  <p class="text-justify mb-1">In case of a data breach, our company can abide by the law and will
+                    notify the competent
+                    authority.</p>
+                </mat-expansion-panel>
+                <mat-expansion-panel
+                  class="basis-panel">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <h6>Communication of a personal data breach to the data subject (Art. 34 GDPR)</h6>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <p class="text-justify mb-1">If the personal data breach is likely to result in a high risk to the
+                    rights and freedoms of the
+                    data subject, the data controller must communicate the personal data breach to her/him
+                    without undue delay. This communication must describe in clear and plain language the
+                    nature of the personal data breach.</p>
+                  <h6>Our Compliance</h6>
+                  <p class="text-justify mb-1">IIn case of a data breach, our company can abide by the law and notify
+                    the concerned data
+                    subjects.</p>
+                </mat-expansion-panel>
+              </mat-accordion>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <div class="col-12">
+      <mat-accordion displayMode="flat">
+        <mat-expansion-panel
+          class="basis-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <h4>Sale of personal data</h4>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p class="text-justify mb-1">In some of our app models, the sale of personal data for business purposes is
+            foreseen.</p>
+          <mat-accordion displayMode="flat">
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>Consent</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">When collected personal data is to be sold, our company relies on the user’s
+                given consent
+                (as detailed in the “Lawfulness of personal data processing and Consent” section) to lawfully
+                sell her/his personal data to third parties.</p>
+              <p class="text-justify mb-1">The processing of personal data for this purpose is explained in a clear and
+                transparent way
+                in our company’s privacy policy. The data subject can freely choose to give our company
+                her/his consent or not.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel
+              class="basis-panel">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h5>International transfers of data</h5>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p class="text-justify mb-1">The GDPR primarily applies to data controllers located in EU/EEA member
+                states. Hence,
+                when personal data is transferred outside of these territories, there is a risk for data subjects
+                to lose the protection of the GDPR. In the light of the above considerations, the GDPR
+                provides special rules on international personal data transfers (Art. 44-50 GDPR).</p>
+              <p class="text-justify mb-1">In accordance with Article 44 GDPR, personal data can only be transferred to
+                third countries
+                when certain conditions regarding data security are met in the third country where data is
+                transferred, as well as in other third countries where the data could further be transferred.</p>
+              <p class="text-justify mb-1">The data controller can lawfully transfer personal data on the basis of an
+                “adequacy
+                decision” (Art. 45 GDPR). Such a decision is taken by the European Commission, when it has
+                decided that a third country, a territory or specified sectors within a third country ensure an
+                adequate level of protection.</p>
+              <p class="text-justify mb-1">In the absence of an adequacy decision the data controller can transfer
+                personal data to a
+                third country or an international organization only if the controller has put in place
+                appropriate safeguards for the security of the data and on condition that legal remedies are
+                available to data subjects (Art. 46 GDPR).</p>
+              <p class="text-justify mb-1">If the international transfer does not fulfil the conditions of Article 45
+                GDPR, nor the ones in
+                Article 46 GDPR, then the transfer is most likely not lawful. There are however some
+                exceptions (Art. 49 GDPR), one of them being the data subject’s consent. Agreements
+                between countries regarding the implementation of appropriate safeguards are relevant as
+                well and must be taken into account.</p>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </mat-expansion-panel>
+      </mat-accordion>
     </div>
   </div>
 </div>
