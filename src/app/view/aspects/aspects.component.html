@@ -1,9 +1,9 @@
 <div class="py-4 content-box mt-4 mb-2">
   <div class="row m-0" *ngIf="page">
-  <div class="col-12 px-4">
-    <h4>{{title}}</h4>
-    <hr>
-  </div>
+    <div class="col-12 px-4">
+      <h4>{{title}}</h4>
+      <hr>
+    </div>
     <div class="col-12 m-0 p-0">
       <mat-accordion displayMode="flat">
         <mat-expansion-panel
@@ -12,15 +12,15 @@
           class="no-padding-panel">
           <mat-expansion-panel-header>
             <mat-panel-title>
-              <strong>Overview on the European Regulation on Data protection</strong>
+              <strong>Overview of the General Data Protection Regulation and our compliance to it</strong>
             </mat-panel-title>
           </mat-expansion-panel-header>
           <p class="description-text">
-            The legal basis covers relevant topics that are relevant for any combination of settings. You only need to read them once.
-            You can find the legal basis here.
-
+            You will find here a brief presentation of the GDPR and its legal requirements. Explanations on our
+            company’s compliance to it are also to be found here. For clarity purposes, we recommend you to start by
+            reading this section.
           </p>
-          <button mat-flat-button color="primary" class="rounded-0" (click)="legalBasis()">Show legal basis</button>
+          <button mat-flat-button color="primary" class="rounded-0" (click)="legalBasis()">Show Overview</button>
         </mat-expansion-panel>
         <mat-expansion-panel
           *ngFor="let p of page.paragraphs; let i = index"
@@ -53,11 +53,11 @@
         </li>
       </ul>
     </div>
-<!--  <div class="col-12 px-4 pt-1" *ngFor="let p of page.paragraphs" (mouseenter)="highlight(p)" (mouseleave)="unhighlight()" [class.highlight]="highlightIds.includes(p.id)">-->
-<!--    <h6>{{p.title}}</h6>-->
-<!--    <p class="description-text">{{p.textCondensed}}</p>-->
-<!--  </div>-->
-</div>
+    <!--  <div class="col-12 px-4 pt-1" *ngFor="let p of page.paragraphs" (mouseenter)="highlight(p)" (mouseleave)="unhighlight()" [class.highlight]="highlightIds.includes(p.id)">-->
+    <!--    <h6>{{p.title}}</h6>-->
+    <!--    <p class="description-text">{{p.textCondensed}}</p>-->
+    <!--  </div>-->
+  </div>
 
 </div>
 
