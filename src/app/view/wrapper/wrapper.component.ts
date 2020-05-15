@@ -40,7 +40,6 @@ export class WrapperComponent implements OnInit, OnDestroy {
 
     this.stateService.phoneScreen$.pipe(takeUntil(this.componentDestroyed$))
       .subscribe(value => {
-        console.log(value);
         this.currentPhoneScreen = value;
       });
   }

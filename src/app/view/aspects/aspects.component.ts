@@ -67,7 +67,6 @@ export class AspectsComponent implements OnInit, OnDestroy, OnChanges {
       .pipe(takeUntil(this.componentDestroyed$))
       .subscribe(value => {
         this.page = value;
-        console.log(this.page);
       });
   }
 
