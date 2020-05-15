@@ -126,6 +126,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "gdpr-ai-app"
+    }
+  },
+  "defaultProject": "gdpr-ai-app",
+  "cli": {
+    "analytics": false
+  }
 }

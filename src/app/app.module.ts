@@ -24,6 +24,7 @@ import {ClickStopPropagationDirective} from './view/clickStopPropagation';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { LandingComponent } from './view/landing/landing.component';
 import { LegalBasisComponent } from './view/legal-basis/legal-basis.component';
+import {NgScrollbarModule} from 'ngx-scrollbar';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { LegalBasisComponent } from './view/legal-basis/legal-basis.component';
       showSubtitle: false,
       animationDuration: 1000
     }),
+    NgScrollbarModule,
     MatButtonModule,
     MatFormFieldModule,
     ReactiveFormsModule,

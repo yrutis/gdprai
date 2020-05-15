@@ -4,7 +4,7 @@
     {
       "id": 1,
       "title": "Categories of Data We Collect",
-      "textCondensed": "<ul>\n<li style=\"font-weight: 400;\"><em><span style=\"font-weight: 400;\">Personal data </span></em><span style=\"font-weight: 400;\">(</span><strong>Art 4(1) GDPR</strong><span style=\"font-weight: 400;\">). Here is a list of personal data we commonly collect to conduct our activities.</span></li>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Your username, password and e-mail address when you register for an account;</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Profile information that you provide for your user profile (eg. First and last name, picture);</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">User Content (e.g. photos) that you post to the Service;</span></li>\n</ul>\n<li style=\"font-weight: 400;\"><em><span style=\"font-weight: 400;\">Sensitive personal data </span></em><span style=\"font-weight: 400;\">(</span><strong>Art 9 GDPR</strong><span style=\"font-weight: 400;\">). When we do need to process sensitive personal data, it is with the consent of the individual unless it is obtained indirectly for legitimate purposes:</span></li>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Personal identification documents that may reveal race or ethnic origin, or physical health, and possibly biometric data of private individuals.</span></li>\n</ul>\n</ul>",
+      "textCondensed": "In the scenario, your personal data is collected. Our company collects and processes the data you give us by registering (such as user name, email address, etc.) as well as the picture of your throat you sent us.\nThis picture of your throat is personal data concerning health. Such data is considered to belong to sensitive personal data, a special category of personal data, as per art. 9 GDPR. As this category of data is considered high risk for the fundamental rights and freedoms of individuals, special processing rules apply.   \nHence, in this scenario, we collect and process both personal data and sensitive personal data. \nThe fact that the data is transferred to our company after you used our app and after you got the medical prediction is irrelevant. The categories of collected data remain the same.",
       "textFull": "text full",
       "references": [
       ],
@@ -15,8 +15,8 @@
     },
     {
       "id": 2,
-      "title": "Lawful reasons for processing Data",
-      "textCondensed": "<ul>\n<li style=\"font-weight: 400;\">\n<p><span style=\"font-weight: 400;\">The following reasons are used when we collect and use personal data to operate our business and provide our products and services (</span><strong>Art 6 GDPR</strong><span style=\"font-weight: 400;\">):</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Consent &ndash; We may rely on your freely given consent at the time you provided your personal data to us.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Contract &ndash; We may process personal data in order to perform our contractual obligations with third parties.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Medical diagnosis &ndash; We may process personal data to provide a medical diagnosis.&nbsp;</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Legitimate interests &ndash; We may rely on legitimate interests based on our evaluation that the processing is fair, reasonable and balanced. These include:</span></li>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Delivering services and products &ndash; To deliver the services and products our clients have engaged us to provide.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Scientific Research purposes &ndash; To help technological development (</span><strong>Recital 159 GDPR</strong><span style=\"font-weight: 400;\">).</span></li>\n</ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Legal obligations and public interest &ndash; We may process personal data in order to meet regulatory and public interest obligations.</span></li>\n</ul>\n</li>\n</ul>",
+      "title": "Lawful reasons for Data Processing",
+      "textCondensed": "To lawfully process personal data our company has to rely on one of the possible lawful reasons listed in Art. 6 GDPR. Two of those lawful reasons to process data are the obtention of users’ consent or legal obligations. Our company could theoretically rely on those two reasons depending on the situation. However, our company will only rely on consent and therefore make sure to have obtained it from its users before processing personal data. \nFor the processing of sensitive data, specific rules apply. The processing of sensitive personal data is basically forbidden. However, art. 9 GDPR lists some exceptions where sensitive data can be processed. One of the exceptions, among others, is the user’s consent again. This is the exception our company relies on to process these data. \nHence, to process sensitive personal data companies have to rely on one lawful reason from art. 6 GDPR as well as on one lawful exception from art. 9 GDPR. In our case, we rely on users’ consent in both situations.",
       "textFull": "text full",
       "references": [
       ],
@@ -27,32 +27,32 @@
     },
     {
       "id": 3,
-      "title": "Storage and Protection of Your Data",
-      "textCondensed": "<p><span style=\"font-weight: 400;\">Whenever we collect or process personal data, we will keep it for as long as is relevant for the purpose for which it was collected.</span>&nbsp;</p>\n<p><span style=\"font-weight: 400;\">We use pseudonymization to protect your personal and sensitive data against loss or other forms of unlawful processing (</span><strong>Art 32 GDPR</strong><span style=\"font-weight: 400;\">). This technique enables us to comply with the GDPR principle of data minimisation (</span><strong>Art 5 GDPR</strong><span style=\"font-weight: 400;\">).</span></p>\n<p><span style=\"font-weight: 400;\">We endeavour, through pseudonymization, to replace any identifying characteristics of data with a pseudonym, or, in other words, a value which does not allow the data subject to be directly identified.</span></p>",
+      "title": "Security of Your Data",
+      "textCondensed": "<p>Our company complies with all the principles and rules set by the GDPR to ensure the security of the collected, processed, and stored personal data. <br /> In the context of data security, our company complies with the principles of data minimization (GDPR 5(1)(c), storage limitation (GDPR 5(1)(e), and accountability (GDPR 5(2). <br /> Furthermore, many different tools supporting security are put in place by our company: <br /> &bull; Our company conducted a Data Protection Impact Assessment (DPIA) before starting its processing activities. <br /> &bull; Our company has a Data Protection Officer. <br /> &bull; Our app is built around the concept of privacy by design and by default. <br /> &bull; Our company keeps a record of its processing activities.<br /> &bull; To secure the data itself our company uses secure methods, such as pseudonymization and encryption.&nbsp;&nbsp;&nbsp;</p>",
       "textFull": "text full",
       "references": [
       ],
       "highlightLaw": [3],
-      "highlightIT": [2,4],
+      "highlightIT": [2, 4],
       "highlightEconomy": [],
       "highlightApp": []
     },
     {
       "id": 4,
-      "title": "Selling your Data",
-      "textCondensed": "<p><span style=\"font-weight: 400;\">Disclosure of data to other persons and companies (processors or third parties) within the scope of our processing, transmission of data to them or granting them access to the data, shall only take place on the basis of a legal permission, if you have consented or if a legal obligation provides for this or on the basis of our legitimate interests (e.g. when using agents, app hosts, etc.).</span></p>\n<p><span style=\"font-weight: 400;\">If we commission third parties with the processing of data on the basis of a so-called &lsquo;order processing contract&rsquo; (</span><strong>Art 28 GDPR</strong><span style=\"font-weight: 400;\"> legal basis).</span></p>\n<p><span style=\"font-weight: 400;\">HealthCare is a company organized and existing under the laws of Switzerland. Switzerland is granted a data protection adequacy status by the European Commission. The effect of such a decision is that, if you are located in the EEA, transfer of your personal data to Switzerland is practically considered as intra-EU transmission of data.</span></p>\n<p><span style=\"font-weight: 400;\">If we transfer Personal Data to countries outside of the EEA or Switzerland, it is done through a series of intercompany agreements based on the Standard Contractual Clauses in accordance with EU law and applicable EU regulations.</span></p>",
+      "title": "Sale of Your Data",
+      "textCondensed": "In this scenario, our company has the intent to sell personal data. \nTo lawfully do so, our company relies on the user’s given consent. The processing of personal data for this purpose is explained in a clear and transparent way in our app’s privacy policy. The user can freely choose to give our company her/his consent or not. \nAs the GDPR mainly applies in the European Union, users risk losing the protection of the Regulation if their data leaves EU territorial scope. To avoid that, the GDPR provides special rules for data transfers outside of the EU: these transfers are prohibited, except for cases where the protection is further guaranteed, even after the transfer. This can, for instance, be the case when an adequacy decision has been rendered, when the companies appropriately safeguard further data protection, or when agreements on security standards have been made. \nOur company acts lawfully by grounding its sale activities on your agreement and by making sure all transfers outside the EU fulfill the conditions to make such transfer legal.",
       "textFull": "text full",
       "references": [
       ],
       "highlightLaw": [4],
       "highlightIT": [],
-      "highlightEconomy": [2,3],
+      "highlightEconomy": [2, 3],
       "highlightApp": []
     },
     {
       "id": 5,
-      "title": "Your rights over your Personal Data",
-      "textCondensed": "<p><span style=\"font-weight: 400;\">You have the right to request:</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Access to the personal data we hold about you, free of charge.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Withdrawal of your consent for use of your personal data and for its transfer to third parties (for selling purposes).</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">That we stop any consent-based processing of your personal data after you withdraw that consent.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">The deletion of your personal data, in accordance with the right to be forgotten (</span><strong>Art 17(2) GDPR</strong><span style=\"font-weight: 400;\">).</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Processing restrictions.</span></li>\n</ul>",
+      "title": "Your Rights over Your Personal Data",
+      "textCondensed": "<p>The GDPR recognizes a series of new rights for individuals whose personal data is collected and processed. This will enable them to have better control over their personal data.<br /> Here is a list of the rights you have in the context of our processing of your data:&nbsp; <br /> &bull; The right to be informed (Art. 12 GDPR) &ndash; you have the right to be informed of what data is processed, for which purpose, and how. <br /> &bull; The right of access (Art. 15 GDPR) &ndash; you can have access to the data we hold about you, free of charge. <br /> &bull; The right to rectification (Art. 16 GDPR) &ndash; You have the right to have your inaccurate personal data rectified or completed. <br /> &bull; The right to erasure or right to be forgotten (Art. 17 GDPR) -You have the right to have your personal data erased.<br /> &bull; The right to restrict processing (Art. 18 GDPR) &ndash; You have the right to require restrictions on the processing of your personal data. <br /> &bull; The right to portability (Art. 20 GDPR) &ndash; You have the right to transfer our data to another service provider. <br /> &bull; The right to object (Art. 21 GDPR) &ndash; You have the right to object to the processing of your personal data.&nbsp;</p>",
       "textFull": "text full",
       "references": [
       ],
@@ -61,7 +61,7 @@
       "highlightEconomy": [4,5],
       "highlightApp": []
     }
-    ],
+  ],
   "references": [
     {
       "name": "GDPR",

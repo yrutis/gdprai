@@ -3,8 +3,56 @@
   "paragraphs": [
     {
       "id": 1,
-      "title": "No GDPR Responsibility",
-      "textCondensed": "Due to the offline aspect of the app, no personal data can be processed and collected. The GDPR will not apply.",
+      "title": "Categories of Data we Collect",
+      "textCondensed": "In the scenario, absolutely no personal data is ever collected from you or processed. Hence, the GDPR and all its legal requirements don’t apply to this app model.",
+      "textFull": "text full",
+      "references": [
+      ],
+      "highlightLaw": [],
+      "highlightIT": [],
+      "highlightEconomy": [],
+      "highlightApp": []
+    },
+    {
+      "id": 2,
+      "title": "Lawful Reasons for Data Processing",
+      "textCondensed": "As our company does not collect or process any data in this scenario, it is unnecessary to look for a legal basis allowing the company to process personal data lawfully.",
+      "textFull": "text full",
+      "references": [
+      ],
+      "highlightLaw": [],
+      "highlightIT": [],
+      "highlightEconomy": [],
+      "highlightApp": []
+    },
+    {
+      "id": 3,
+      "title": "Security of Your Data",
+      "textCondensed": "As our company does not collect nor hold any of your personal data in this scenario, data security issues are not relevant here.",
+      "textFull": "text full",
+      "references": [
+      ],
+      "highlightLaw": [],
+      "highlightIT": [],
+      "highlightEconomy": [],
+      "highlightApp": []
+    },
+    {
+      "id": 4,
+      "title": "Sale of Your data",
+      "textCondensed": "As our company does not collect nor hold any of your personal data in this scenario, questions regarding the potential sale of your personal data are not relevant. Therefore, discussing the lawfulness of such a sale is irrelevant as well.",
+      "textFull": "text full",
+      "references": [
+      ],
+      "highlightLaw": [],
+      "highlightIT": [],
+      "highlightEconomy": [],
+      "highlightApp": []
+    },
+    {
+      "id": 5,
+      "title": "Your Rights over Your Personal Data",
+      "textCondensed": "The GDPR does not apply in this scenario. Therefore, there are no special rights for the users to be mentioned in relation to the processing of their data, as our company is not processing any.",
       "textFull": "text full",
       "references": [
       ],
